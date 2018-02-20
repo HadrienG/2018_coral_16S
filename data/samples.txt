@@ -1,0 +1,27 @@
+run, sample, species, location, collection date, technology
+SRR3185215, seawater, NA, 25.5N 79.2W, 2009, 454
+SRR3185227, seawater, NA, 25.4N 79.2W, 2009, 454
+SRR3185228, coral, A. elisabethae, 24.8N 76.3W, 2006, 454
+SRR3185229, coral, A. elisabethae, 24.8N 76.3W, 2006, 454
+SRR3185230, coral, A. elisabethae, 24.8N 76.3W, 2006, 454
+SRR3185231, coral, A. elisabethae, 24.8N 76.3W, 2006, 454
+SRR3185232, coral, A. elisabethae, 26.6N 77.9W, 2006, 454
+SRR3185233, coral, A. elisabethae, 26.6N 77.9W, 2006, 454
+SRR3185234, coral, A. elisabethae, 25.4N 79.2W, 2006, 454
+SRR3185236, coral, A. elisabethae, 25.4N 79.2W, 2006, 454
+SRR3185237, coral, A. elisabethae, 25.4N 79.2W, 2006, 454
+SRR3185238, coral, A. elisabethae, 25.4N 79.2W, 2006, 454
+SRR3185240, coral, A. elisabethae, 25.5N 79.2W, 2009, 454
+SRR3185242, coral, A. elisabethae, 26.5N 78.5W, 2006, 454
+SRR3185243, coral, A. elisabethae, 26.5N 78.5W, 2006, 454
+SRR3185251, coral, A. elisabethae, 24.0N 74.5W, 2013, 454
+SRR3185264, coral, A. elisabethae, 26.5N 78.5W, 2006, 454
+SRR3185266, coral, A. elisabethae, 24.0N 74.5W, 2011, 454
+SRR3185267, coral, A. elisabethae, 24.0N 74.5W, 2013, 454
+SRR3185270, coral, A. elisabethae, 24.0N 74.5W, 2011, 454
+SRR3185273, coral, A. elisabethae, 24.0N 74.5W, 2011, 454
+SRR3185276, seawater, NA, 24.0N 74.5W, 2011, 454
+SRR3185277, seawater, NA, 24.0N 74.5W, 2011, 454
+SRR3185279, seawater, NA, 24.0N 74.5W, 2011, 454
+SRR3185280, seawater, NA, 24.0N 74.5W, 2011, 454
+SRR3185281, seawater, NA, 24.0N 74.5W, 2011, 454
