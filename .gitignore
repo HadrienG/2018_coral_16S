@@ -5,3 +5,7 @@ work/
 
 # big files and results
 *.fastq
+*.fastq.gz
+
+# r stuff
+.Rproj.user
