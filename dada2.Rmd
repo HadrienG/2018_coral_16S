@@ -56,4 +56,5 @@ taxa <- addSpecies(taxa, "db/silva_species_assignment_v132.fa.gz")
 taxa.print <- taxa # Removing sequence rownames for display only
 rownames(taxa.print) <- NULL
 head(taxa.print)
+save(seqtab.nochim, file = "results/seqtab.nochim")
 ```
