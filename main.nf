@@ -30,17 +30,17 @@ process download {
         """
 }
 
-// process dump {
-//     publishDir = 'test'
-//
-//     input:
-//         file read from reads
-//
-//     output:
-//         file '**/*.fastq' into fastq
-//
-//     script:
-//         """
-//         bionode-sra fastq-dump --split-files $read
-//         """
-// }
+process dump {
+    publishDir = 'data'
+
+    input:
+        file read from reads
+
+    output:
+        file '*.fastq' into fastq
+
+    script:
+        """
+        bionode-sra fastq-dump $read
+        """
+}
