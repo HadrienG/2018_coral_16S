@@ -1,0 +1,12 @@
+# nextflow stuff
+.nextflow/
+.nextflow.log*
+work/
+
+# big files and results
+*.fastq
+*.fastq.gz
+db/
+
+# r stuff
+.Rproj.user

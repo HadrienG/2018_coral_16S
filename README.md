@@ -27,7 +27,7 @@ The data from the following papers will hopefully  be used
 | 10.1038/srep45362             | PRJNA352338 | 55        |          |
 | 10.1371/journal.pone.0067745  | SRP020949   | 10        |          |
 
-\* Samples marked with an asterisk have no data available in the bioprojects (yet?)
+\* Samples marked with an asterisk have no data available in the bioprojects (yet?)  
 \*\* Data without sufficient metadata / with pooled samples will not be analysed.
 
 See `data/samples.txt` for more information
@@ -38,4 +38,10 @@ To run the code, you'll need [nextflow](https://www.nextflow.io/) installed.
 
 ### Download the data
 
-*TODO*
+```bash
+nextflow download.nf
+```
+
+### Run the pipeline
+
+see `dada2.Rmd`
