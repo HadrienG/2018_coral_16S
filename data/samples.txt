@@ -25,26 +25,54 @@ PRJNA313050, SRR3185277, seawater, NA, 24.0N 74.5W, 2011, 454, V4
 PRJNA313050, SRR3185279, seawater, NA, 24.0N 74.5W, 2011, 454, V4
 PRJNA313050, SRR3185280, seawater, NA, 24.0N 74.5W, 2011, 454, V4
 PRJNA313050, SRR3185281, seawater, NA, 24.0N 74.5W, 2011, 454, V4
-PRJNA296835, SRR2914449, coral, Anthothela grandiflora, RB.688Q5, 37.0N 74.6W, 2013, 454, V4-V5
-PRJNA296835, SRR2914448, coral, Anthothela spp, RB.688Q4, 37.0N 74.6W, 2013, 454, V4-V5
-PRJNA296835, SRR2914447, coral, Alcyonium grandiflorum, RB.688Q3, 37.0N 74.6W, 2013, 454, V4-V5
-PRJNA296835, SRR2914445, coral, Anthothela spp, RB.688Q2, 37.0N 74.6W, 2013, 454, V4-V5
-PRJNA296835, SRR2914440, coral, Anthothela grandiflora, RB.688Q1, 37.0N 74.6W, 2013, 454, V4-V5
-PRJNA296835, SRR2914428, coral, NA, RB.687Q4, 37.1N 74.6W, 2013, 454, V4-V5
-PRJNA296835, SRR2914418, coral, Anthothela spp, RB.687Q3, 37.1N 74.6W, 2013, 454, V4-V5
-PRJNA296835, SRR2914407, coral, Anthothela grandiflora, RB.686Q4, 37.1N 74.6W, 2013, 454, V4-V5
-PRJNA296835, SRR2914406, coral, Anthothela spp, RB.686Q5, 37.1N 74.6W, 2013, 454, V4-V5
-PRJNA296835, SRR2914405, coral, Anthothela grandiflora, NF.18Q7, 38.1N 73.8W, 2012, 454, V4-V5
-PRJNA296835, SRR2914404, coral, Anthothela spp, NF.18Q6, 38.1N 73.8W, 2012, 454, V4-V5
-PRJNA296835, SRR2914403, coral, Anthothela grandiflora, NF.17Q7, 38.1N 73.8W, 2012, 454, V4-V5
-PRJNA296835, SRR2914401, coral, Anthothela grandiflora, NF.17Q6, 38.1N 73.8W, 2012, 454, V4-V5
-PRJNA296835, SRR2914399, coral, NA, NF.16Q6, 38.1N 73.9W, 2012, 454, V4-V5
-PRJNA296835, SRR2914398, coral, Anthothela grandiflora, NF.16Q7, 38.1N 73.9W, 2012, 454, V4-V5
-PRJNA296835, SRR2914397, coral, Alcyonium grandiflorum, RB.686Q2, 37.1N 74.6W, 2013, 454, V4-V5
-PRJNA296835, SRR2914396, coral, Anthothela grandiflora, RB.687Q5, 37.1N 74.6W, 2013, 454, V4-V5
-PRJNA296835, SRR2914391, coral, Anthothela grandiflora, NF.15Q7, 38.2N 73.9W, 2012, 454, V4-V5
-PRJNA296835, SRR2914390, coral, Anthothela grandiflora, NF.15Q6, 38.2N 73.8W, 2012, 454, V4-V5
-PRJNA296835, SRR2914389, coral, Anthothela grandiflora, NF.13Q7, 38.2N 73.9W, 2012, 454, V4-V5
-PRJNA296835, SRR2914387, coral, Anthothela grandiflora, NF.13Q6, 38.2N 73.9W, 2012, 454, V4-V5
-PRJNA296835, SRR2914386, coral, NA, NF.02Q7, 38.1N 73.9W, 2012, 454, V4-V5
-PRJNA296835, SRR2913305, coral, NA, NF.01Q7, 38.2N 73.9W, 2012, 454, V4-V5
+PRJNA296835, SRR2914449, coral, Anthothela grandiflora, 37.0N 74.6W, 2013, 454, V4-V5
+PRJNA296835, SRR2914448, coral, Anthothela spp, 37.0N 74.6W, 2013, 454, V4-V5
+PRJNA296835, SRR2914447, coral, Alcyonium grandiflorum, 37.0N 74.6W, 2013, 454, V4-V5
+PRJNA296835, SRR2914445, coral, Anthothela spp, 37.0N 74.6W, 2013, 454, V4-V5
+PRJNA296835, SRR2914440, coral, Anthothela grandiflora, 37.0N 74.6W, 2013, 454, V4-V5
+PRJNA296835, SRR2914428, coral, NA, 37.1N 74.6W, 2013, 454, V4-V5
+PRJNA296835, SRR2914418, coral, Anthothela spp, 37.1N 74.6W, 2013, 454, V4-V5
+PRJNA296835, SRR2914407, coral, Anthothela grandiflora, 37.1N 74.6W, 2013, 454, V4-V5
+PRJNA296835, SRR2914406, coral, Anthothela spp, 37.1N 74.6W, 2013, 454, V4-V5
+PRJNA296835, SRR2914405, coral, Anthothela grandiflora, 38.1N 73.8W, 2012, 454, V4-V5
+PRJNA296835, SRR2914404, coral, Anthothela spp, 38.1N 73.8W, 2012, 454, V4-V5
+PRJNA296835, SRR2914403, coral, Anthothela grandiflora, 38.1N 73.8W, 2012, 454, V4-V5
+PRJNA296835, SRR2914401, coral, Anthothela grandiflora, 38.1N 73.8W, 2012, 454, V4-V5
+PRJNA296835, SRR2914399, coral, NA, 38.1N 73.9W, 2012, 454, V4-V5
+PRJNA296835, SRR2914398, coral, Anthothela grandiflora, 38.1N 73.9W, 2012, 454, V4-V5
+PRJNA296835, SRR2914397, coral, Alcyonium grandiflorum, 37.1N 74.6W, 2013, 454, V4-V5
+PRJNA296835, SRR2914396, coral, Anthothela grandiflora, 37.1N 74.6W, 2013, 454, V4-V5
+PRJNA296835, SRR2914391, coral, Anthothela grandiflora, 38.2N 73.9W, 2012, 454, V4-V5
+PRJNA296835, SRR2914390, coral, Anthothela grandiflora, 38.2N 73.8W, 2012, 454, V4-V5
+PRJNA296835, SRR2914389, coral, Anthothela grandiflora, 38.2N 73.9W, 2012, 454, V4-V5
+PRJNA296835, SRR2914387, coral, Anthothela grandiflora, 38.2N 73.9W, 2012, 454, V4-V5
+PRJNA296835, SRR2914386, coral, NA, 38.1N 73.9W, 2012, 454, V4-V5
+PRJNA296835, SRR2913305, coral, NA, 38.2N 73.9W, 2012, 454, V4-V5
+PRJNA312472, SRR3197013, coral, Corallium rubrum, 43.1N 5.3E, Illumina MiSeq, V1-V2
+PRJNA312472, SRR3197011, coral, Corallium rubrum, 43.1N 5.3E, Illumina MiSeq, V1-V2
+PRJNA312472, SRR3197010, coral, Corallium rubrum, 43.1N 5.3E, Illumina MiSeq, V1-V2
+PRJNA312472, SRR3197009, coral, Corallium rubrum, 43.1N 5.3E, Illumina MiSeq, V1-V2
+PRJNA312472, SRR3197008, seawater, NA, 42.2N 3.2E, Illumina MiSeq, V1-V2
+PRJNA312472, SRR3197007, coral, Corallium rubrum, 42.2N 3.2E, Illumina MiSeq, V1-V2
+PRJNA312472, SRR3197006, coral, Corallium rubrum, 42.2N 3.2E, Illumina MiSeq, V1-V2
+PRJNA312472, SRR3197005, seawater, NA, 44.2N 9.1E, Illumina MiSeq, V1-V2
+PRJNA312472, SRR3197004, coral, Corallium rubrum, 44.2N 9.1E, Illumina MiSeq, V1-V2
+PRJNA312472, SRR3197003, coral, Corallium rubrum, 44.2N 9.1E, Illumina MiSeq, V1-V2
+PRJNA312472, SRR3197001, coral, Corallium rubrum, 44.2N 9.1E, Illumina MiSeq, V1-V2
+PRJNA312472, SRR3197000, coral, Corallium rubrum, 44.2N 9.1E, Illumina MiSeq, V1-V2
+PRJNA312472, SRR3196999, coral, Corallium rubrum, 44.2N 9.1E, Illumina MiSeq, V1-V2
+PRJNA312472, SRR3196998, seawater, NA, 41.5N 8.5E, Illumina MiSeq, V1-V2
+PRJNA312472, SRR3196997, coral, Corallium rubrum, 41.5N 8.5E, Illumina MiSeq, V1-V2
+PRJNA312472, SRR3196996, coral, Corallium rubrum, 42.2N 3.2E, Illumina MiSeq, V1-V2
+PRJNA312472, SRR3196995, coral, Corallium rubrum, 41.5N 8.5E, Illumina MiSeq, V1-V2
+PRJNA312472, SRR3196994, coral, Corallium rubrum, 41.5N 8.5E, Illumina MiSeq, V1-V2
+PRJNA312472, SRR3196993, coral, Corallium rubrum, 41.5N 8.5E, Illumina MiSeq, V1-V2
+PRJNA312472, SRR3196992, coral, Corallium rubrum, 41.5N 8.5E, Illumina MiSeq, V1-V2
+PRJNA312472, SRR3196991, seawater, NA, 39.6N 3.1E, Illumina MiSeq, V1-V2
+PRJNA312472, SRR3196990, coral, Corallium rubrum, 39.6N 3.1E, Illumina MiSeq, V1-V2
+PRJNA312472, SRR3196989, coral, Corallium rubrum, 39.6N 3.1E, Illumina MiSeq, V1-V2
+PRJNA312472, SRR3196988, coral, Corallium rubrum, 39.6N 3.1E, Illumina MiSeq, V1-V2
+PRJNA312472, SRR3196987, seawater, NA, 43.1N 5.3E, Illumina MiSeq, V1-V2
+PRJNA312472, SRR3196986, coral, Corallium rubrum, 43.1N 5.3E, Illumina MiSeq, V1-V2
+PRJNA312472, SRR3196985, coral, Corallium rubrum, 42.2N 3.2E, Illumina MiSeq, V1-V2
+PRJNA312472, SRR3196984, coral, Corallium rubrum, 42.2N 3.2E, Illumina MiSeq, V1-V2

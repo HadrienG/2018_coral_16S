@@ -14,7 +14,7 @@ The data from the following papers will hopefully  be used
 | 10.1128/mBio.00560-16         | PRJNA328211 | 1         |          |
 | 10.3390/microorganisms4030023 | PRJNA313050 | 26        | ✅       |
 | 10.3389/fmicb.2016.00458      | PRJNA296835 | 23        | ✅       |
-| 10.1038/srep27277             | SRP071002   | 28        |          |
+| 10.1038/srep27277             | PRJNA312472 | 28        | ✅       |
 | 10.1111/1758-2229.12412       | PRJNA295144 | 2         |          |
 | 10.1371/journal.pone.0074265  | PRJNA208242 | 127       |          |
 | 10.1128/AEM.00695-13          | PRJNA189184 | 5         |          |
