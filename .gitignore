@@ -7,6 +7,8 @@ work/
 *.fastq
 *.fastq.gz
 db/
+results/
 
 # r stuff
 .Rproj.user
+.Rhistory
