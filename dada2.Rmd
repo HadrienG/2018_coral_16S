@@ -57,4 +57,5 @@ taxa.print <- taxa # Removing sequence rownames for display only
 rownames(taxa.print) <- NULL
 head(taxa.print)
 save(seqtab.nochim, file = "results/seqtab.nochim")
+save(taxa, file = "results/taxa")
 ```

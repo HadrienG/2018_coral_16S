@@ -10,6 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r load_pkgs}
+library(dada2)
 library(phyloseq)
 library(ggplot2)
 library(readr)
@@ -20,8 +21,10 @@ library(DECIPHER)
 
 ```{r load_data}
 load("results/seqtab.nochim")
+load("results/taxa")
 samples.out <- rownames(seqtab.nochim)
-metadata <- read_csv2("data/samples.txt")
+metadata <- read_csv("data/samples.txt")
+row.names(metadata) <- metadata$run
 ```
 
 ```{r tree}
@@ -41,5 +44,40 @@ fitGTR <- optim.pml(fitGTR, model='GTR', optInv=TRUE, optGamma=TRUE,
                     rearrangement = 'stochastic',
                     control = pml.control(trace = 0))
 detach('package:phangorn', unload=TRUE)
+```
+
+```{r}
+View(metadata)
+```
+
+
+```{r}
+physeq <- phyloseq(otu_table(seqtab.nochim, taxa_are_rows=FALSE),
+                   sample_data(metadata),
+                   tax_table(taxa),
+                   phy_tree(fitGTR$tree))
+# remove mock sample
+physeq
+```
+
+```{r}
+plot_richness(physeq, x = "run", color = "sample", measures = c('Fisher')) +
+    theme_minimal()
+```
+
+```{r}
+str(physeq@tax_table)
+top20 <- names(sort(taxa_sums(physeq), decreasing=TRUE))[1:20]
+physeq_top20 <- transform_sample_counts(physeq, function(OTU) OTU/sum(OTU))
+physeq_top20 <- prune_taxa(top20, physeq_top20)
+plot_bar(physeq, x='run', fill='Phylum') +
+    theme_minimal()
+```
+
+```{r}
+# tree doesn't seem too bad
+proteo <- subset_taxa(physeq, Phylum %in% c('Cyanobacteria'))
+plot_tree(proteo, ladderize='left', size='abundance',
+          color='sample', label.tips='Genus')
 ```
 
