@@ -1,0 +1,13 @@
+sudo: required
+
+language: java
+jdk: openjdk8
+
+services:
+    - docker
+
+install:
+    - ./test/install.sh
+
+script:
+    - ./test/test_pipeline.sh

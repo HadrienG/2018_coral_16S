@@ -1,6 +1,7 @@
 #!/usr/bin/env nextflow
 
-samples = file 'data/samples.txt'
+params.samples = 'data/samples.txt'
+samples = file params.samples
 
 process parse {
     input:
