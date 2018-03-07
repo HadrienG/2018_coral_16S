@@ -1,27 +1,50 @@
 project, run, sample, species, location, collection date, technology, 16S region
 PRJNA313050, SRR3185215, seawater, NA, 25.5N 79.2W, 2009, 454, V1-V2
 PRJNA313050, SRR3185227, seawater, NA, 25.4N 79.2W, 2009, 454, V1-V2
-PRJNA313050, SRR3185228, coral, A. elisabethae, 24.8N 76.3W, 2006, 454, V1-V2
-PRJNA313050, SRR3185229, coral, A. elisabethae, 24.8N 76.3W, 2006, 454, V1-V2
-PRJNA313050, SRR3185230, coral, A. elisabethae, 24.8N 76.3W, 2006, 454, V1-V2
-PRJNA313050, SRR3185231, coral, A. elisabethae, 24.8N 76.3W, 2006, 454, V1-V2
-PRJNA313050, SRR3185232, coral, A. elisabethae, 26.6N 77.9W, 2006, 454, V1-V2
-PRJNA313050, SRR3185233, coral, A. elisabethae, 26.6N 77.9W, 2006, 454, V1-V2
-PRJNA313050, SRR3185234, coral, A. elisabethae, 25.4N 79.2W, 2006, 454, V1-V2
-PRJNA313050, SRR3185236, coral, A. elisabethae, 25.4N 79.2W, 2006, 454, V1-V2
-PRJNA313050, SRR3185237, coral, A. elisabethae, 25.4N 79.2W, 2006, 454, V1-V2
-PRJNA313050, SRR3185238, coral, A. elisabethae, 25.4N 79.2W, 2006, 454, V1-V2
-PRJNA313050, SRR3185240, coral, A. elisabethae, 25.5N 79.2W, 2009, 454, V1-V2
-PRJNA313050, SRR3185242, coral, A. elisabethae, 26.5N 78.5W, 2006, 454, V1-V2
-PRJNA313050, SRR3185243, coral, A. elisabethae, 26.5N 78.5W, 2006, 454, V1-V2
-PRJNA313050, SRR3185251, coral, A. elisabethae, 24.0N 74.5W, 2013, 454, V4
-PRJNA313050, SRR3185264, coral, A. elisabethae, 26.5N 78.5W, 2006, 454, V1-V2
-PRJNA313050, SRR3185266, coral, A. elisabethae, 24.0N 74.5W, 2011, 454. V4
-PRJNA313050, SRR3185267, coral, A. elisabethae, 24.0N 74.5W, 2013, 454, V4
-PRJNA313050, SRR3185270, coral, A. elisabethae, 24.0N 74.5W, 2011, 454, V4
-PRJNA313050, SRR3185273, coral, A. elisabethae, 24.0N 74.5W, 2011, 454, V4
+PRJNA313050, SRR3185228, coral, Antillogorgia elisabethae, 24.8N 76.3W, 2006, 454, V1-V2
+PRJNA313050, SRR3185229, coral, Antillogorgia elisabethae, 24.8N 76.3W, 2006, 454, V1-V2
+PRJNA313050, SRR3185230, coral, Antillogorgia elisabethae, 24.8N 76.3W, 2006, 454, V1-V2
+PRJNA313050, SRR3185231, coral, Antillogorgia elisabethae, 24.8N 76.3W, 2006, 454, V1-V2
+PRJNA313050, SRR3185232, coral, Antillogorgia elisabethae, 26.6N 77.9W, 2006, 454, V1-V2
+PRJNA313050, SRR3185233, coral, Antillogorgia elisabethae, 26.6N 77.9W, 2006, 454, V1-V2
+PRJNA313050, SRR3185234, coral, Antillogorgia elisabethae, 25.4N 79.2W, 2006, 454, V1-V2
+PRJNA313050, SRR3185236, coral, Antillogorgia elisabethae, 25.4N 79.2W, 2006, 454, V1-V2
+PRJNA313050, SRR3185237, coral, Antillogorgia elisabethae, 25.4N 79.2W, 2006, 454, V1-V2
+PRJNA313050, SRR3185238, coral, Antillogorgia elisabethae, 25.4N 79.2W, 2006, 454, V1-V2
+PRJNA313050, SRR3185240, coral, Antillogorgia elisabethae, 25.5N 79.2W, 2009, 454, V1-V2
+PRJNA313050, SRR3185242, coral, Antillogorgia elisabethae, 26.5N 78.5W, 2006, 454, V1-V2
+PRJNA313050, SRR3185243, coral, Antillogorgia elisabethae, 26.5N 78.5W, 2006, 454, V1-V2
+PRJNA313050, SRR3185251, coral, Antillogorgia elisabethae, 24.0N 74.5W, 2013, 454, V4
+PRJNA313050, SRR3185264, coral, Antillogorgia elisabethae, 26.5N 78.5W, 2006, 454, V1-V2
+PRJNA313050, SRR3185266, coral, Antillogorgia elisabethae, 24.0N 74.5W, 2011, 454. V4
+PRJNA313050, SRR3185267, coral, Antillogorgia elisabethae, 24.0N 74.5W, 2013, 454, V4
+PRJNA313050, SRR3185270, coral, Antillogorgia elisabethae, 24.0N 74.5W, 2011, 454, V4
+PRJNA313050, SRR3185273, coral, Antillogorgia elisabethae, 24.0N 74.5W, 2011, 454, V4
 PRJNA313050, SRR3185276, seawater, NA, 24.0N 74.5W, 2011, 454, V4
 PRJNA313050, SRR3185277, seawater, NA, 24.0N 74.5W, 2011, 454, V4
 PRJNA313050, SRR3185279, seawater, NA, 24.0N 74.5W, 2011, 454, V4
 PRJNA313050, SRR3185280, seawater, NA, 24.0N 74.5W, 2011, 454, V4
 PRJNA313050, SRR3185281, seawater, NA, 24.0N 74.5W, 2011, 454, V4
+PRJNA296835, SRR2914449, coral, Anthothela grandiflora, RB.688Q5, 37.0N 74.6W, 2013, 454, V4-V5
+PRJNA296835, SRR2914448, coral, Anthothela spp, RB.688Q4, 37.0N 74.6W, 2013, 454, V4-V5
+PRJNA296835, SRR2914447, coral, Alcyonium grandiflorum, RB.688Q3, 37.0N 74.6W, 2013, 454, V4-V5
+PRJNA296835, SRR2914445, coral, Anthothela spp, RB.688Q2, 37.0N 74.6W, 2013, 454, V4-V5
+PRJNA296835, SRR2914440, coral, Anthothela grandiflora, RB.688Q1, 37.0N 74.6W, 2013, 454, V4-V5
+PRJNA296835, SRR2914428, coral, NA, RB.687Q4, 37.1N 74.6W, 2013, 454, V4-V5
+PRJNA296835, SRR2914418, coral, Anthothela spp, RB.687Q3, 37.1N 74.6W, 2013, 454, V4-V5
+PRJNA296835, SRR2914407, coral, Anthothela grandiflora, RB.686Q4, 37.1N 74.6W, 2013, 454, V4-V5
+PRJNA296835, SRR2914406, coral, Anthothela spp, RB.686Q5, 37.1N 74.6W, 2013, 454, V4-V5
+PRJNA296835, SRR2914405, coral, Anthothela grandiflora, NF.18Q7, 38.1N 73.8W, 2012, 454, V4-V5
+PRJNA296835, SRR2914404, coral, Anthothela spp, NF.18Q6, 38.1N 73.8W, 2012, 454, V4-V5
+PRJNA296835, SRR2914403, coral, Anthothela grandiflora, NF.17Q7, 38.1N 73.8W, 2012, 454, V4-V5
+PRJNA296835, SRR2914401, coral, Anthothela grandiflora, NF.17Q6, 38.1N 73.8W, 2012, 454, V4-V5
+PRJNA296835, SRR2914399, coral, NA, NF.16Q6, 38.1N 73.9W, 2012, 454, V4-V5
+PRJNA296835, SRR2914398, coral, Anthothela grandiflora, NF.16Q7, 38.1N 73.9W, 2012, 454, V4-V5
+PRJNA296835, SRR2914397, coral, Alcyonium grandiflorum, RB.686Q2, 37.1N 74.6W, 2013, 454, V4-V5
+PRJNA296835, SRR2914396, coral, Anthothela grandiflora, RB.687Q5, 37.1N 74.6W, 2013, 454, V4-V5
+PRJNA296835, SRR2914391, coral, Anthothela grandiflora, NF.15Q7, 38.2N 73.9W, 2012, 454, V4-V5
+PRJNA296835, SRR2914390, coral, Anthothela grandiflora, NF.15Q6, 38.2N 73.8W, 2012, 454, V4-V5
+PRJNA296835, SRR2914389, coral, Anthothela grandiflora, NF.13Q7, 38.2N 73.9W, 2012, 454, V4-V5
+PRJNA296835, SRR2914387, coral, Anthothela grandiflora, NF.13Q6, 38.2N 73.9W, 2012, 454, V4-V5
+PRJNA296835, SRR2914386, coral, NA, NF.02Q7, 38.1N 73.9W, 2012, 454, V4-V5
+PRJNA296835, SRR2913305, coral, NA, NF.01Q7, 38.2N 73.9W, 2012, 454, V4-V5
