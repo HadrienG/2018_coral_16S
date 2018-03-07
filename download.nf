@@ -18,6 +18,8 @@ process parse {
 accessions = accessions.splitText()
 
 process download {
+    container 'hadrieng/bionode'
+
     input:
         val acc from accessions
 
@@ -31,6 +33,7 @@ process download {
 }
 
 process dump {
+    container 'hadrieng/bionode'
     publishDir = 'data'
 
     input:
