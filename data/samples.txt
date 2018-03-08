@@ -76,3 +76,58 @@ PRJNA312472, SRR3196987, seawater, NA, 43.1N 5.3E, Illumina MiSeq, V1-V2
 PRJNA312472, SRR3196986, coral, Corallium rubrum, 43.1N 5.3E, Illumina MiSeq, V1-V2
 PRJNA312472, SRR3196985, coral, Corallium rubrum, 42.2N 3.2E, Illumina MiSeq, V1-V2
 PRJNA312472, SRR3196984, coral, Corallium rubrum, 42.2N 3.2E, Illumina MiSeq, V1-V2
+PRJNA352338, SRR5043892, coral, Porites lobata, 22.3N 38.86E,Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043891, coral, Porites lobata, 22.2N 39.0E,Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043890, bleached, Porites lobata, 22.3N 38.9E,Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043889, coral, Porites lobata, 24.6N 54.4E,Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043888, coral, Porites lobata, 22.3N 39.0E,Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043887, coral, Porites lobata, 24.6N 54.4E,Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043886, coral, Porites lobata, 22.3N 38.9E,Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043885, bleached, Porites lobata, 22.2N 39.0E,Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043884, bleached, Porites lobata, 22.2N 39.0E,Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043883, coral, Porites lobata, 22.3N 38.9E,Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043882, coral, Porites lobata, 22.2N 39.0E,Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043881, coral, Porites lobata, 24.8N 54.7E,Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043880, bleached, Porites lobata, 24.9N 54.7E,Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043879, bleached, Porites lobata, 22.2N 39.0E,Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043878, coral, Porites lobata, 22.3N 38.9E,Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043877, bleached, Porites lobata, 24.6N 54.4E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043876, coral, Porites lobata, 22.3N 38.9E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043875, coral, Porites lobata, 22.2N 39.0E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043874, seawater, NA, 22.3N 38.9E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043873, coral, Porites lobata, 24.6N 54.4E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043872, coral, Porites lobata, 22.3N 38.9E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043871, seawater, NA, 22.2N 39.0E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043870, seawater, NA, 22.3N 39.0E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043869, bleached, Porites lobata, 22.3N 39.0E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043868, coral, Porites lobata, 24.6N 54.4E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043867, seawater, NA, 24.8N 54.7E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043866, coral, Porites lobata, 22.2N 39.0E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043865, bleached, Porites lobata, 24.8N 54.7E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043864, bleached, Porites lobata, 22.2N 39.0E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043863, coral, Porites lobata, 22.2N 39.0E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043862, coral, Porites lobata, 22.3N 39.0E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043861, coral, Porites lobata, 24.8N 54.7E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043860, bleached, Porites lobata, 22.3N 39.0E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043859, bleached, Porites lobata, 24.8N 54.7E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043858, bleached, Porites lobata, 24.6N 54.4E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043857, coral, Porites lobata, 22.3N 38.9E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043856, coral, Porites lobata, 22.3N 38.9E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043855, coral, Porites lobata, 22.3N 38.9E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043854, bleached, Porites lobata, 22.2N 39.0E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043853, coral, Porites lobata, 24.8N 54.7E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043852, coral, Porites lobata, 22.3N 39.0E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043851, bleached, Porites lobata, 24.8N 54.7E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043850, coral, Porites lobata, 22.2N 39.0E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043849, coral, Porites lobata, 24.8N 54.7E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043848, coral, Porites lobata, 24.6N 54.4E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043847, bleached, Porites lobata, 24.6N 54.4E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043846, coral, Porites lobata, 24.8N 54.7E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043845, bleached, Porites lobata, 24.6N 54.4E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043844, bleached, Porites lobata, 22.3N 39.0E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043843, bleached, Porites lobata, 22.3N 39.0E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043842, seawater, NA, 24.6N 54.4E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043841, bleached, Porites lobata, 24.8N 54.7E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043840, bleached, Porites lobata, 22.3N 39.0E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043839, bleached, Porites lobata, 24.6N 54.4E, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043838, coral, Porites lobata, 22.3N 39.0E, Illumina MiSeq, V5-V6
