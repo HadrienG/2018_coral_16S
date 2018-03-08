@@ -18,7 +18,7 @@ The data from the following papers will hopefully  be used
 | 10.1111/1758-2229.12412       | PRJNA295144 | 2         | #3       |
 | 10.1371/journal.pone.0074265  | PRJNA208242 | 127       |          |
 | 10.1128/AEM.00695-13          | PRJNA189184 | 5         | ✅       |
-| 10.1038/ismej.2016.9          | PRJNA310360 | 120       |          |
+| 10.1038/ismej.2016.9          | PRJNA310360 | 120\***   | ✅       |
 | 10.1111/mec.13251             | PRJNA277291 | 54        |          |
 | 10.3354/meps10197             | SRA050215   | 12        |          |
 | 10.1111/mec.13567             | PRJNA282461 | 41        | ❎       |
@@ -28,6 +28,7 @@ The data from the following papers will hopefully  be used
 
 \* Samples marked with an asterisk have no data available in the bioprojects (yet?)  
 \*\* Data without sufficient metadata / with pooled samples will not be analysed.  
+\*\*\* The samples that were disturbed with antibiotics will not be considered for reanalysis
 
 See `data/samples.txt` for more information
 
