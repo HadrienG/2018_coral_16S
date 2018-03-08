@@ -131,3 +131,8 @@ PRJNA352338, SRR5043841, bleached, Porites lobata, 24.8N 54.7E, Illumina MiSeq, 
 PRJNA352338, SRR5043840, bleached, Porites lobata, 22.3N 39.0E, Illumina MiSeq, V5-V6
 PRJNA352338, SRR5043839, bleached, Porites lobata, 24.6N 54.4E, Illumina MiSeq, V5-V6
 PRJNA352338, SRR5043838, coral, Porites lobata, 22.3N 39.0E, Illumina MiSeq, V5-V6
+PRJNA189184, SRR764561, coral, Stylophora pistillata, 19.9N 40.2E, 454, V5-V6
+PRJNA189184, SRR764560, coral, Stylophora pistillata, 20.1N 40.2E, 454, V5-V6
+PRJNA189184, SRR764559, coral, Stylophora pistillata, 19.9N 40.0E, 454, V5-V6
+PRJNA189184, SRR764558, coral, Stylophora pistillata, 19.2N 40.3E, 454, V5-V6
+PRJNA189184, SRR764557, coral, Stylophora pistillata, 18.7N 40.8E, 454, V5-V6
