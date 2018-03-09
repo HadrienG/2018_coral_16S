@@ -30,7 +30,7 @@ The data from the following papers will hopefully  be used
 | 10.7717/peerj.2529            | PRJNA297333 | 5         | ✅       |
 | 10.1007/s00248-016-0858-x     | PRJNA312774 | 60        | ✅       |
 | 10.1371/journal.pone.0100316  | PRJNA231864 | 34        | ✅       |
-| 10.1371/journal.pone.0076095  | PRJNA193567 | 16        |          |
+| 10.1371/journal.pone.0076095  | PRJNA193567 | 16        | ✅       |
 
 \* Samples marked with an asterisk have no data available in the bioprojects (yet?)  
 \*\* Data without sufficient metadata / with pooled samples will not be analysed.  

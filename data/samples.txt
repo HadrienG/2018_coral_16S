@@ -388,3 +388,19 @@ PRJNA231864, SRR1144458, lesioned mucus, Porites astreoides, 16.5N 88.4W, 2012, 
 PRJNA231864, SRR1144457, lesioned mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
 PRJNA231864, SRR1144456, lesioned mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
 PRJNA231864, SRR1144455, lesioned mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA193567, SRR847822, coral, Porites cylindrica, 23.2S 151.6E, 2013, 454, V1-V4
+PRJNA193567, SRR847821, coral, Porites cylindrica, 23.2S 151.6E, 2013, 454, V1-V4
+PRJNA193567, SRR847820, coral, Porites cylindrica, 23.2S 151.6E, 2013, 454, V1-V4
+PRJNA193567, SRR847819, coral, Seriatopora hystrix, 23.2S 151.6E, 2013, 454, V1-V4
+PRJNA193567, SRR847818, coral, Seriatopora hystrix, 23.2S 151.6E, 2013, 454, V1-V4
+PRJNA193567, SRR847817, coral, Seriatopora hystrix	, 23.2S 151.6E, 2013, 454, V1-V4
+PRJNA193567, SRR847816, coral, Montipora digitata, 23.2S 151.6E, 2014, 454, V1-V4
+PRJNA193567, SRR847815, coral, Montipora digitata, 23.2S 151.6E, 2013, 454, V1-V4
+PRJNA193567, SRR847814, coral, Montipora digitata, 23.2S 151.6E, 2013, 454, V1-V4
+PRJNA193567, SRR847813, coral, Isopora palifera, 23.2S 151.6E, 2013, 454, V1-V4
+PRJNA193567, SRR847812, coral, Isopora palifera, 23.2S 151.6E, 2013, 454, V1-V4
+PRJNA193567, SRR847811, coral, Isopora palifera, 23.2S 151.6E, 2013, 454, V1-V4
+PRJNA193567, SRR847810, coral, Porites cylindrica, 23.2S 151.6E, 2013, 454, V1-V4
+PRJNA193567, SRR847809, coral, Montipora digitata, 23.2S 151.6E, 2013, 454, V1-V4
+PRJNA193567, SRR847808, coral, Seriatopora hystrix, 23.2S 151.6E, 2013, 454, V1-V4
+PRJNA193567, SRR847518, coral, Isopora palifera, 23.2S 151.6E, 2013, 454, V1-V4
