@@ -20,7 +20,7 @@ The data from the following papers will hopefully  be used
 | 10.1128/AEM.00695-13          | PRJNA189184 | 5         | ✅       |
 | 10.1038/ismej.2016.9          | PRJNA310360 | 120\***   | ✅       |
 | 10.1111/mec.13251             | PRJNA277291 | 54        | ✅       |
-| 10.3354/meps10197             | SRA050215   | 12        |          |
+| 10.3354/meps10197             | SRP010998   | 12        | ✅       |
 | 10.1111/mec.13567             | PRJNA282461 | 41        | ❎       |
 | 10.1038/srep07320             | SRR1263017  | 2\**      | #4       |
 | 10.1038/srep45362             | PRJNA352338 | 55        | ✅       |

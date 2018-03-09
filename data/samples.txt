@@ -267,3 +267,15 @@ PRJNA277291, SRR1833719, coral, Ctenactis echinata, 22.3N 38.9E, 2011, 454, V5-V
 PRJNA277291, SRR1833718, coral, Ctenactis echinata, 22.3N 38.9E, 2011, 454, V5-V6
 PRJNA277291, SRR1833717, coral, Ctenactis echinata, 22.3N 38.9E, 2011, 454, V5-V6
 PRJNA277291, SRR1833716, coral, Ctenactis echinata, 22.3N 38.9E, 2011, 454, V5-V6
+SRP010998, SRR413296, coral, Eunicella cavolini, 43.4N 7.2E, 2010, 454, V1-V2
+SRP010998, SRR413295, coral, Eunicella cavolini, 43.4N 7.2E, 2010, 454, V1-V2
+SRP010998, SRR413294, coral, Eunicella cavolini, 43.4N 7.2E, 2010, 454, V1-V2
+SRP010998, SRR413293, coral, Eunicella cavolini, 43.4N 7.2E, 2010, 454, V1-V2
+SRP010998, SRR413292, coral, Eunicella cavolini, 43.4N 7.2E, 2010, 454, V1-V2
+SRP010998, SRR413291, coral, Eunicella cavolini, 43.4N 7.2E, 2010, 454, V1-V2
+SRP010998, SRR413290, coral, Eunicella cavolini, 43.4N 7.2E, 2010, 454, V1-V2
+SRP010998, SRR413289, coral, Eunicella cavolini, 43.4N 7.2E, 2010, 454, V1-V2
+SRP010998, SRR413288, coral, Eunicella cavolini, 43.4N 7.2E, 2010, 454, V1-V2
+SRP010998, SRR413287, coral, Eunicella cavolini, 43.4N 7.2E, 2010, 454, V1-V2
+SRP010998, SRR413286, coral, Eunicella cavolini, 43.4N 7.2E, 2010, 454, V1-V2
+SRP010998, SRR413285, coral, Eunicella cavolini, 43.4N 7.2E, 2010, 454, V1-V2
