@@ -279,3 +279,13 @@ SRP010998, SRR413288, coral, Eunicella cavolini, 43.4N 7.2E, 2010, 454, V1-V2
 SRP010998, SRR413287, coral, Eunicella cavolini, 43.4N 7.2E, 2010, 454, V1-V2
 SRP010998, SRR413286, coral, Eunicella cavolini, 43.4N 7.2E, 2010, 454, V1-V2
 SRP010998, SRR413285, coral, Eunicella cavolini, 43.4N 7.2E, 2010, 454, V1-V2
+PRJNA192455, SRR413065, coral, Lytocarpia sp. LV-2013, 36.5N 12.1E, 2011, 454, V6
+PRJNA192455, SRR413064, coral, Eunicella verrucosa, 36.5N 12.1E, 2011, 454, V6
+PRJNA192455, SRR413063, coral, Eunicella verrucosa, 36.5N 12.1E, 2011, 454, V6
+PRJNA192455, SRR413062, coral, Paramuricea clavata, 40.5N 9.4E, 2008, 454, V6
+PRJNA192455, SRR413061, coral, Paramuricea clavata, 40.5N 9.4E, 2008, 454, V6
+PRJNA192455, SRR413060, coral, Paramuricea clavata, 36.5N 12.1E, 2011, 454, V6
+PRJNA192455, SRR413059, coral, Paramuricea clavata, 36.5N 12.1E, 2011, 454, V6
+PRJNA192455, SRR413058, coral, Paramuricea clavata, 36.5N 12.1E, 2011, 454, V6
+PRJNA192455, SRR413057, coral, Paramuricea clavata, 44.2N 9.1E, 2011, 454, V6
+PRJNA192455, SRR413056, coral, Paramuricea clavata, 44.2N 9.1E, 2011, 454, V6
