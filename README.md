@@ -26,7 +26,6 @@ The data from the following papers will hopefully  be used
 | 10.1038/srep07320             | SRR1263017  | 2\**      | #4       |
 | 10.1038/srep45362             | PRJNA352338 | 55        | ✅       |
 | 10.1371/journal.pone.0067745  | PRJNA192455 | 10        | ✅       |
-| 10.1111/1462-2920.12366       | SRP026283   | 2         |          |
 | 10.1111/1462-2920.13840       | PRJNA302254 | 3         |          |
 | 10.1371/journal.pone.0143790  | PRJNA230817 | 1         |          |
 | 10.7717/peerj.2529            | PRJNA297333 | 5         |          |
