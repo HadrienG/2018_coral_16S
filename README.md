@@ -26,6 +26,22 @@ The data from the following papers will hopefully  be used
 | 10.1038/srep07320             | SRR1263017  | 2\**      | #4       |
 | 10.1038/srep45362             | PRJNA352338 | 55        | ✅       |
 | 10.1371/journal.pone.0067745  | PRJNA192455 | 10        | ✅       |
+| 10.3354/dao069079             |             |           |          |
+| 10.1371/journal.pone.0050130  |             |           |          |
+| 10.1111/1462-2920.12366       |             |           |          |
+| 10.1111/1462-2920.13840       |             |           |          |
+| 10.1371/journal.pone.0143790  |             |           |          |
+| 10.7717/peerj.2529            |             |           |          |
+| 10.1139/cjm-2016-0100         |             |           |          |
+| 10.3389/fmicb.2015.01094      |             |           |          |
+| 10.1128/AEM.07764-11          |             |           |          |
+| 10.1038/ismej.2011.144        |             |           |          |
+| 10.1155/2012/746720           |             |           |          |
+| 10.1007/s11274-006-9315-1     |             |           |          |
+| 10.1007/s00248-016-0858-x     |             |           |          |
+| 10.1371/journal.pone.0100316  |             |           |          |
+| 10.1371/journal.pone.0076095  |             |           |          |
+| 10.1111/mec.12392             |             |           |          |
 
 \* Samples marked with an asterisk have no data available in the bioprojects (yet?)  
 \*\* Data without sufficient metadata / with pooled samples will not be analysed.  
