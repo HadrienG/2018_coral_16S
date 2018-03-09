@@ -4,13 +4,15 @@
 
 This repository aims at reanalysing available 16S data from coral reefs and their surrounding environment.
 
+In particular we are interested in papers who claim to investigate the core microbiome of various coral reef species.
+
 ## Data
 
 The data from the following papers will hopefully  be used
 
 | Paper (doi)                   | Accession   | N samples | metadata |
 | :---------------------------- | :---------- | :---------| :--------|
-| 10.1038/ismej.2015.39         | PRJNA233450 | 71*       |          |
+| 10.1038/ismej.2015.39         | PRJNA233450 | 71*       | #6       |
 | 10.1128/mBio.00560-16         | PRJNA328211 | 1\**      | #2       |
 | 10.3390/microorganisms4030023 | PRJNA313050 | 26        | ✅       |
 | 10.3389/fmicb.2016.00458      | PRJNA296835 | 23        | ✅       |
