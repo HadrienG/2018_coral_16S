@@ -294,3 +294,63 @@ PRJNA297333, SRR2953686, coral, Paramuricea placomus, 38.2N 73.8W, 2012, 454, V4
 PRJNA297333, SRR2953685, coral, Paramuricea placomus, 38.2N 73.8W, 2012, 454, V4-V5
 PRJNA297333, SRR2953682, coral, Paramuricea placomus, 38.2N 73.8W, 2012, 454, V4-V5
 PRJNA297333, SRR2953678, coral, Paramuricea placomus, 38.2N 73.8W, 2012, 454, V4-V5
+PRJNA312774, SRR3197173, coral, Eunicella singularis, 43.1N 5.3E, 2013, 454, V5-V6
+PRJNA312774, SRR3197172, coral, Eunicella cavolini, 43.1N 5.3E, 2013, 454, V5-V6
+PRJNA312774, SRR3197171, coral, Eunicella cavolini,	43.1N 5.3E, 2013, 454, V5-V6
+PRJNA312774, SRR3197074, coral, Eunicella cavolini,	43.1N 5.3E, 2013, 454, V5-V6
+PRJNA312774, SRR3197070, coral, Leptogorgia sarmentosa, 44.2N 9.1E, 2013, 454, V5-V6
+PRJNA312774, SRR3197069, coral, Leptogorgia sarmentosa, 44.2N 9.1E, 2013, 454, V5-V6
+PRJNA312774, SRR3197068, coral, Leptogorgia sarmentosa,	44.2N 9.1E, 2013, 454, V5-V6
+PRJNA312774, SRR3197067, coral, Eunicella verrucosa, 44.2N 9.1E, 2013, 454, V5-V6
+PRJNA312774, SRR3197066, coral, Eunicella verrucosa, 44.2N 9.1E, 2013, 454, V5-V6
+PRJNA312774, SRR3197065, coral, Eunicella verrucosa, 44.2N 9.1E, 2013, 454, V5-V6
+PRJNA312774, SRR3197064, coral, Eunicella singularis, 44.2N 9.1E, 2013, 454, V5-V6
+PRJNA312774, SRR3197063, coral, Eunicella singularis, 44.2N 9.1E, 2013, 454, V5-V6
+PRJNA312774, SRR3197062, coral, Eunicella singularis, 44.2N 9.1E, 2013, 454, V5-V6
+PRJNA312774, SRR3197061, coral, Eunicella cavolini, 44.2N 9.1E, 2013, 454, V5-V6
+PRJNA312774, SRR3197060, coral, Leptogorgia sarmentosa, 42.2N 3.2E, 2013, 454, V5-V6
+PRJNA312774, SRR3197059, coral, Eunicella cavolini, 44.2N 9.1E, 2013, 454, V5-V6
+PRJNA312774, SRR3197058, coral, Eunicella cavolini, 44.2N 9.1E, 2013, 454, V5-V6
+PRJNA312774, SRR3197057, coral, Eunicella singularis, 41.5N 8.5E, 2013, 454, V5-V6
+PRJNA312774, SRR3197056, coral, Eunicella singularis, 41.5N 8.5E, 2013, 454, V5-V6
+PRJNA312774, SRR3197055, coral, Eunicella singularis, 41.5N 8.5E, 2013, 454, V5-V6
+PRJNA312774, SRR3197054, coral, Eunicella cavolini, 41.5N 8.5E, 2013, 454, V5-V6
+PRJNA312774, SRR3197053, coral, Eunicella cavolini, 41.5N 8.5E, 2013, 454, V5-V6
+PRJNA312774, SRR3197052, coral, Eunicella cavolini, 41.5N 8.5E, 2013, 454, V5-V6
+PRJNA312774, SRR3197051, coral, Leptogorgia sarmentosa, 39.6N 3.1E, 2013, 454, V5-V6
+PRJNA312774, SRR3197050, coral, Leptogorgia sarmentosa, 39.6N 3.1E, 2013, 454, V5-V6
+PRJNA312774, SRR3197048, coral, Leptogorgia sarmentosa, 42.2N 3.2E, 2013, 454, V5-V6
+PRJNA312774, SRR3197047, coral, Leptogorgia sarmentosa, 39.6N 3.1E, 2013, 454, V5-V6
+PRJNA312774, SRR3197046, coral, Eunicella singularis, 39.6N 3.1E, 2013, 454, V5-V6
+PRJNA312774, SRR3197045, coral, Eunicella singularis, 39.6N 3.1E, 2013, 454, V5-V6
+PRJNA312774, SRR3197044, coral, Eunicella singularis, 39.6N 3.1E, 2013, 454, V5-V6
+PRJNA312774, SRR3197043, coral, Eunicella cavolini, 39.6N 3.1E, 2013, 454, V5-V6
+PRJNA312774, SRR3197042, coral, Eunicella cavolini, 39.6N 3.1E, 2013, 454, V5-V6
+PRJNA312774, SRR3197041, coral, Eunicella cavolini, 39.6N 3.1E, 2013, 454, V5-V6
+PRJNA312774, SRR3197040, seawater, NA, 44.2N 9.1E, 2013, 454, V5-V6
+PRJNA312774, SRR3197039, seawater, NA, 41.5N 8.5E, 2013, 454, V5-V6
+PRJNA312774, SRR3197038, seawater, NA, 39.6N 3.1E, 2013, 454, V5-V6
+PRJNA312774, SRR3197037, coral, Leptogorgia sarmentosa, 42.2N 3.2E, 2013, 454, V5-V6
+PRJNA312774, SRR3197036, seawater, NA, 39.6N 3.1E, 2013, 454, V5-V6
+PRJNA312774, SRR3197035, seawater, NA, 43.1N 5.3E, 2013, 454, V5-V6
+PRJNA312774, SRR3197034, seawater, NA, 42.2N 3.2E, 2013, 454, V5-V6
+PRJNA312774, SRR3197033, coral, Paramuricea clavata, 43.5N 15.2E, 2013, 454, V5-V6
+PRJNA312774, SRR3197032, coral, Paramuricea clavata, 43.5N 15.2E, 2013, 454, V5-V6
+PRJNA312774, SRR3197031, coral, Paramuricea clavata, 43.5N 15.2E, 2013, 454, V5-V6
+PRJNA312774, SRR3197030, coral, Paramuricea clavata, 43.5N 15.2E, 2013, 454, V5-V6
+PRJNA312774, SRR3197029, coral, Eunicella singularis, 43.5N 15.2E, 2013, 454, V5-V6
+PRJNA312774, SRR3197028, coral, Eunicella singularis, 43.5N 15.2E, 2013, 454, V5-V6
+PRJNA312774, SRR3197027, coral, Eunicella singularis, 43.5N 15.2E, 2013, 454, V5-V6
+PRJNA312774, SRR3197026, coral, Eunicella singularis, 42.2N 3.2E, 2013, 454, V5-V6
+PRJNA312774, SRR3197025, coral, Eunicella singularis, 43.5N 15.2E, 2013, 454, V5-V6
+PRJNA312774, SRR3197024, coral, Eunicella singularis, 43.5N 15.2E, 2013, 454, V5-V6
+PRJNA312774, SRR3197023, coral, Eunicella cavolini, 43.5N 15.2E, 2013, 454, V5-V6
+PRJNA312774, SRR3197022, coral, Eunicella cavolini, 43.5N 15.2E, 2013, 454, V5-V6
+PRJNA312774, SRR3197021, coral, Eunicella cavolini, 43.5N 15.2E, 2013, 454, V5-V6
+PRJNA312774, SRR3197020, coral, Eunicella cavolini, 43.5N 15.2E, 2013, 454, V5-V6
+PRJNA312774, SRR3197019, coral, Eunicella cavolini, 43.5N 15.2E, 2013, 454, V5-V6
+PRJNA312774, SRR3197018, coral, Eunicella cavolini, 43.5N 15.2E, 2013, 454, V5-V6
+PRJNA312774, SRR3197017, coral, Eunicella singularis, 43.1N 5.3E, 2013, 454, V5-V6
+PRJNA312774, SRR3197016, coral, Eunicella singularis, 43.1N 5.3E, 2013, 454, V5-V6
+PRJNA312774, SRR3197015, coral, Eunicella singularis, 42.2N 3.2E, 2013, 454, V5-V6
+PRJNA312774, SRR3197014, coral, Eunicella singularis, 42.2N 3.2E, 2013, 454, V5-V6

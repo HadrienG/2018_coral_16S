@@ -28,7 +28,7 @@ The data from the following papers will hopefully  be used
 | 10.1371/journal.pone.0067745  | PRJNA192455 | 10        | ✅       |
 | 10.1111/1462-2920.13840       | PRJNA302254 | 3         | #7       |
 | 10.7717/peerj.2529            | PRJNA297333 | 5         | ✅       |
-| 10.1007/s00248-016-0858-x     | PRJNA312774 | 60        |          |
+| 10.1007/s00248-016-0858-x     | PRJNA312774 | 60        | ✅       |
 | 10.1371/journal.pone.0100316  | PRJNA231864 | 34        |          |
 | 10.1371/journal.pone.0076095  | PRJNA193567 | 16        |          |
 
