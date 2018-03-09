@@ -289,3 +289,8 @@ PRJNA192455, SRR413059, coral, Paramuricea clavata, 36.5N 12.1E, 2011, 454, V6
 PRJNA192455, SRR413058, coral, Paramuricea clavata, 36.5N 12.1E, 2011, 454, V6
 PRJNA192455, SRR413057, coral, Paramuricea clavata, 44.2N 9.1E, 2011, 454, V6
 PRJNA192455, SRR413056, coral, Paramuricea clavata, 44.2N 9.1E, 2011, 454, V6
+PRJNA297333, SRR2953688, coral, Paramuricea placomus, 38.2N 73.8W, 2012, 454, V4-V5
+PRJNA297333, SRR2953686, coral, Paramuricea placomus, 38.2N 73.8W, 2012, 454, V4-V5
+PRJNA297333, SRR2953685, coral, Paramuricea placomus, 38.2N 73.8W, 2012, 454, V4-V5
+PRJNA297333, SRR2953682, coral, Paramuricea placomus, 38.2N 73.8W, 2012, 454, V4-V5
+PRJNA297333, SRR2953678, coral, Paramuricea placomus, 38.2N 73.8W, 2012, 454, V4-V5
