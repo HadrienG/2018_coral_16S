@@ -354,3 +354,37 @@ PRJNA312774, SRR3197017, coral, Eunicella singularis, 43.1N 5.3E, 2013, 454, V5-
 PRJNA312774, SRR3197016, coral, Eunicella singularis, 43.1N 5.3E, 2013, 454, V5-V6
 PRJNA312774, SRR3197015, coral, Eunicella singularis, 42.2N 3.2E, 2013, 454, V5-V6
 PRJNA312774, SRR3197014, coral, Eunicella singularis, 42.2N 3.2E, 2013, 454, V5-V6
+PRJNA231864, SRR1144492, mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144487, mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144486, mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144485, mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144484, mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144483, mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144482, mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144481, mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144480, mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144479, mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144478, mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144477, mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144476, mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144475, mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144474, mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144473, mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144472, mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144471, mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144470, lesioned mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144469, lesioned mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144468, mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144467, mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144466, lesioned mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144465, lesioned mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144464, lesioned mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144463, lesioned mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144462, lesioned mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144461, lesioned mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144460, lesioned mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144459, lesioned mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144458, lesioned mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144457, lesioned mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144456, lesioned mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
+PRJNA231864, SRR1144455, lesioned mucus, Porites astreoides, 16.5N 88.4W, 2012, 454, V4
