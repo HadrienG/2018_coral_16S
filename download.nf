@@ -1,6 +1,8 @@
 #!/usr/bin/env nextflow
 
 params.samples = 'data/samples.txt'
+params.output = 'data'
+
 samples = file params.samples
 
 process parse {
@@ -35,7 +37,7 @@ process download {
 
 process dump {
     container 'hadrieng/bionode'
-    publishDir = 'data'
+    publishDir = params.output
 
     input:
         file read from reads
