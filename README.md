@@ -22,7 +22,7 @@ The data from the following papers will hopefully  be used
 | 10.1038/ismej.2016.9          | PRJNA310360 | 120\***   | ✅       |
 | 10.1111/mec.13251             | PRJNA277291 | 54        | ✅       |
 | 10.3354/meps10197             | SRP010998   | 12        | ✅       |
-| 10.1111/mec.13567             | PRJNA282461 | 41        | [#5](https://github.com/HadrienG/2018_coral_16S/issues/5)       |
+| 10.1111/mec.13567             | PRJNA282461 | 41        | ❎ [#5](https://github.com/HadrienG/2018_coral_16S/issues/5)       |
 | 10.1038/srep07320             | SRR1263017  | 2\**      | ❎ ([#4](https://github.com/HadrienG/2018_coral_16S/issues/4))       |
 | 10.1038/srep45362             | PRJNA352338 | 55        | ✅       |
 | 10.1371/journal.pone.0067745  | PRJNA192455 | 10        | ✅       |
