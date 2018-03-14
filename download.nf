@@ -14,7 +14,7 @@ process parse {
 
     script:
         """
-        cut -d ',' -f 1 $samples | tail -n +2
+        cut -d ',' -f 2 $samples | tail -n +2
         """
 }
 
