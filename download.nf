@@ -20,33 +20,19 @@ process parse {
 
 accessions = accessions.splitText()
 
-process download {
-    container 'hadrieng/bionode'
+process dump {
+    tag {acc.trim()}
+    container 'hadrieng/sratoolkit'
+    publishDir params.output, mode: 'copy'
 
     input:
         val acc from accessions
 
     output:
-        file '**/*.sra' into reads
+        file '*.fastq.gz' into fastq
 
     script:
         """
-        bionode-ncbi download sra $acc
-        """
-}
-
-process dump {
-    container 'hadrieng/bionode'
-    publishDir = params.output
-
-    input:
-        file read from reads
-
-    output:
-        file '*.fastq' into fastq
-
-    script:
-        """
-        bionode-sra fastq-dump $read
+        fastq-dump --gzip --split-files -I $acc
         """
 }

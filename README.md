@@ -45,9 +45,19 @@ To run the code, you'll need [nextflow](https://www.nextflow.io/) installed.
 ### Download the data
 
 ```bash
-nextflow download.nf
+nextflow run download.nf
 ```
 
-### Run the pipeline
+which will download the data into the `data` directory,
+
+The data is approximately XXX Gb, so you might want to store it on an external drive.
+As an example, if you have a drive mounted on `/Volumes/data`:
+
+```bash
+mkdir -p /Volumes/data/nf_temp/ /Volumes/data/2018_corals_16S/
+nextflow run download.nf -work-dir /Volumes/data/nf_temp/ --output /Volumes/data/2018_corals_16S/
+```
+
+## Run the pipeline
 
 see `dada2.Rmd`
