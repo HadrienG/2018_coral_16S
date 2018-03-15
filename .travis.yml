@@ -7,7 +7,9 @@ services:
     - docker
 
 install:
-    - ./test/install.sh
+    - sudo bash test/install.sh
+    - cd ${TRAVIS_BUILD_DIR}/test/
 
 script:
-    - ./test/test_pipeline.sh
+    - sudo bash test_download.sh
+    - sudo bash test_qc.sh
