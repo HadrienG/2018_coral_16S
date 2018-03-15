@@ -1,5 +1,7 @@
 # Coral 16S reanalysis
 
+[![Build Status](https://travis-ci.org/HadrienG/2018_coral_16S.svg?branch=master)](https://travis-ci.org/HadrienG/2018_coral_16S)
+
 ## Introduction
 
 This repository aims at reanalysing available 16S data from coral reefs and their surrounding environment.
@@ -8,7 +10,7 @@ In particular we are interested in papers who claim to investigate the core micr
 
 ## Data
 
-The data from the following papers will hopefully  be used
+The data from the following papers will hopefully be used
 
 | Paper (doi)                   | Accession   | N samples | metadata |
 | :---------------------------- | :---------- | :---------| :--------|
@@ -37,6 +39,8 @@ The data from the following papers will hopefully  be used
 \*\*\* The samples that were disturbed with antibiotics will not be considered for reanalysis.
 
 See `data/samples.txt` for more information
+
+*Don't see your dataset / article in the list? Open an issue and I'll be more than happy to use it!*
 
 ## Setup
 

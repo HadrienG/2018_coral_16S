@@ -13,3 +13,6 @@ install:
 script:
     - sudo bash test_download.sh
     - sudo bash test_qc.sh
+
+notifications:
+    email: false
