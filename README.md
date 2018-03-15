@@ -58,6 +58,12 @@ mkdir -p /Volumes/data/nf_temp/ /Volumes/data/2018_corals_16S/
 nextflow run download.nf -work-dir /Volumes/data/nf_temp/ --output /Volumes/data/2018_corals_16S/
 ```
 
+then link them to the data directory
+
+```bash
+ln -s /Volumes/data/2018_corals_16S/*.fastq.gz data/
+```
+
 ### Download the SILVA database
 
 The following command will download the necessary files to use the SILVA database with dada2
