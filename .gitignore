@@ -3,12 +3,18 @@
 .nextflow.log*
 work/
 
-# big files and results
+# big files
 *.fastq
 *.fastq.gz
 db/
-results/
 
 # r stuff
 .Rproj.user
 .Rhistory
+
+# mac stuff
+.DS_Store
+
+# test / in progress stuff
+seqtab.nochim
+taxa

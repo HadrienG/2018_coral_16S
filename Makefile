@@ -2,7 +2,7 @@ clean:
 	rm -rf work/
 	rm -rf .nextflow.log*
 
-dl_tax:
+db:
 	mkdir -p db
 	cd db; \
 	wget -N https://zenodo.org/record/1172783/files/silva_nr_v132_train_set.fa.gz; \

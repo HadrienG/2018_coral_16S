@@ -58,6 +58,32 @@ mkdir -p /Volumes/data/nf_temp/ /Volumes/data/2018_corals_16S/
 nextflow run download.nf -work-dir /Volumes/data/nf_temp/ --output /Volumes/data/2018_corals_16S/
 ```
 
+### Download the SILVA database
+
+The following command will download the necessary files to use the SILVA database with dada2
+
+```bash
+make db
+```
+
+This will create a `db` directory
+
 ## Run the pipeline
 
+*WORK IN PROGRESS*
+
+### Data QC and Adapter trimming
+
+wip
+
+### Run DADA2
+
+wip
+
 see `dada2.Rmd`
+
+### Data visualisation
+
+wip
+
+see `phyloseq.Rmd`
