@@ -1,3 +1,5 @@
 project, run, sample, species, location, collection date, technology, 16S region
 PRJNA313050, SRR3185215, seawater, NA, 25.5N 79.2W, 2009, 454, V1-V2
 PRJNA313050, SRR3185227, seawater, NA, 25.4N 79.2W, 2009, 454, V1-V2
+PRJNA312472, SRR3197013, coral, Corallium rubrum, 43.1N 5.3E, 2013, Illumina MiSeq, V1-V2
+PRJNA312472, SRR3197011, coral, Corallium rubrum, 43.1N 5.3E, 2013, Illumina MiSeq, V1-V2
