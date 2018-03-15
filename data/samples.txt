@@ -279,16 +279,16 @@ SRP010998, SRR413288, coral, Eunicella cavolini, 43.4N 7.2E, 2010, 454, V1-V2
 SRP010998, SRR413287, coral, Eunicella cavolini, 43.4N 7.2E, 2010, 454, V1-V2
 SRP010998, SRR413286, coral, Eunicella cavolini, 43.4N 7.2E, 2010, 454, V1-V2
 SRP010998, SRR413285, coral, Eunicella cavolini, 43.4N 7.2E, 2010, 454, V1-V2
-PRJNA192455, SRR413065, coral, Lytocarpia sp. LV-2013, 36.5N 12.1E, 2011, 454, V6
-PRJNA192455, SRR413064, coral, Eunicella verrucosa, 36.5N 12.1E, 2011, 454, V6
-PRJNA192455, SRR413063, coral, Eunicella verrucosa, 36.5N 12.1E, 2011, 454, V6
-PRJNA192455, SRR413062, coral, Paramuricea clavata, 40.5N 9.4E, 2008, 454, V6
-PRJNA192455, SRR413061, coral, Paramuricea clavata, 40.5N 9.4E, 2008, 454, V6
-PRJNA192455, SRR413060, coral, Paramuricea clavata, 36.5N 12.1E, 2011, 454, V6
-PRJNA192455, SRR413059, coral, Paramuricea clavata, 36.5N 12.1E, 2011, 454, V6
-PRJNA192455, SRR413058, coral, Paramuricea clavata, 36.5N 12.1E, 2011, 454, V6
-PRJNA192455, SRR413057, coral, Paramuricea clavata, 44.2N 9.1E, 2011, 454, V6
-PRJNA192455, SRR413056, coral, Paramuricea clavata, 44.2N 9.1E, 2011, 454, V6
+PRJNA192455, SRR836065, coral, Lytocarpia sp. LV-2013, 36.5N 12.1E, 2011, 454, V6
+PRJNA192455, SRR836064, coral, Eunicella verrucosa, 36.5N 12.1E, 2011, 454, V6
+PRJNA192455, SRR836063, coral, Eunicella verrucosa, 36.5N 12.1E, 2011, 454, V6
+PRJNA192455, SRR836062, coral, Paramuricea clavata, 40.5N 9.4E, 2008, 454, V6
+PRJNA192455, SRR836061, coral, Paramuricea clavata, 40.5N 9.4E, 2008, 454, V6
+PRJNA192455, SRR836060, coral, Paramuricea clavata, 36.5N 12.1E, 2011, 454, V6
+PRJNA192455, SRR836059, coral, Paramuricea clavata, 36.5N 12.1E, 2011, 454, V6
+PRJNA192455, SRR836058, coral, Paramuricea clavata, 36.5N 12.1E, 2011, 454, V6
+PRJNA192455, SRR836057, coral, Paramuricea clavata, 44.2N 9.1E, 2011, 454, V6
+PRJNA192455, SRR836056, coral, Paramuricea clavata, 44.2N 9.1E, 2011, 454, V6
 PRJNA297333, SRR2953688, coral, Paramuricea placomus, 38.2N 73.8W, 2012, 454, V4-V5
 PRJNA297333, SRR2953686, coral, Paramuricea placomus, 38.2N 73.8W, 2012, 454, V4-V5
 PRJNA297333, SRR2953685, coral, Paramuricea placomus, 38.2N 73.8W, 2012, 454, V4-V5
