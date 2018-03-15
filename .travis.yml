@@ -15,7 +15,7 @@ script:
     - sudo bash test_qc.sh
 
 after_failure:
-    - cat .nexflow.log
+    - cat .nextflow.log
 
 notifications:
     email: false

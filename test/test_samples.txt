@@ -1,5 +1,5 @@
 project, run, sample, species, location, collection date, technology, 16S region
-PRJNA313050, SRR3185215, seawater, NA, 25.5N 79.2W, 2009, 454, V1-V2
-PRJNA313050, SRR3185227, seawater, NA, 25.4N 79.2W, 2009, 454, V1-V2
-PRJNA312472, SRR3197013, coral, Corallium rubrum, 43.1N 5.3E, 2013, Illumina MiSeq, V1-V2
-PRJNA312472, SRR3197011, coral, Corallium rubrum, 43.1N 5.3E, 2013, Illumina MiSeq, V1-V2
+PRJNA277291, SRR1834172, coral, Ctenactis echinata, 22.3N 38.9E, 2011, 454, V5-V6
+PRJNA277291, SRR1834171, coral, Ctenactis echinata, 22.3N 38.9E, 2011, 454, V5-V6
+PRJNA352338, SRR5043885, bleached, Porites lobata, 22.2N 39.0E, 2012, Illumina MiSeq, V5-V6
+PRJNA352338, SRR5043886, coral, Porites lobata, 22.3N 38.9E, 2012, Illumina MiSeq, V5-V6
