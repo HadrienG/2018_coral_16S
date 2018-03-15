@@ -14,5 +14,8 @@ script:
     - sudo bash test_download.sh
     - sudo bash test_qc.sh
 
+after_failure:
+    - cat .nexflow.log
+
 notifications:
     email: false

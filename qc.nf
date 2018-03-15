@@ -10,7 +10,7 @@ Channel
 
 
 process qc {
-    tag {acc.trim()}
+    tag {name}
     container 'jdidion/atropos'
     publishDir params.output, mode: 'copy'
 
