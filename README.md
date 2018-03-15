@@ -50,18 +50,13 @@ nextflow run download.nf
 
 which will download the data into the `data` directory,
 
-The data is approximately XXX Gb, so you might want to store it on an external drive.
-As an example, if you have a drive mounted on `/Volumes/data`:
+The data consists of compressed fastq files and is approximately 2 Gb.
+You'll need 4Gb of storage for downloading (due the the nextflow temp files that we keep in case we want to resume an interrupted download)
+
+You can remove the temporary files with
 
 ```bash
-mkdir -p /Volumes/data/nf_temp/ /Volumes/data/2018_corals_16S/
-nextflow run download.nf -work-dir /Volumes/data/nf_temp/ --output /Volumes/data/2018_corals_16S/
-```
-
-then link them to the data directory
-
-```bash
-ln -s /Volumes/data/2018_corals_16S/*.fastq.gz data/
+make clean
 ```
 
 ### Download the SILVA database
