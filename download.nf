@@ -33,6 +33,6 @@ process dump {
 
     script:
         """
-        fastq-dump --gzip --split-files -I $acc
+        fastq-dump --gzip --skip-technical --split-files -I $acc
         """
 }
