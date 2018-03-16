@@ -18,12 +18,12 @@ process fastqc {
         file reads from read_files
 
     output:
-        file 'fastqc' into fastqc_dir
+        file "*_fastqc.{zip,html}" into fastqc_results
 
     script:
         """
         mkdir fastqc
-        fastqc $reads -o fastqc
+        fastqc $reads
         """
 }
 
@@ -32,7 +32,7 @@ process multiqc {
     publishDir 'results', mode: 'copy'
 
     input:
-        file fastqc from fastqc_dir
+        file 'fastqc/*' from fastqc_results.collect()
 
     output:
         file 'multiqc_report.html'
