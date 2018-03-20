@@ -56,15 +56,11 @@ process trimming_pe {
         """
 }
 
-reads_multiqc = Channel
-    .create()
-    .concat(trimmed_reads_se, trimmed_reads_pe)
-
 process fastqc {
     container 'hadrieng/fastqc'
 
     input:
-        file reads from reads_multiqc
+        file reads from trimmed_reads_se.concat(trimmed_reads_pe)
 
     output:
         file "*_fastqc.{zip,html}" into fastqc_results
