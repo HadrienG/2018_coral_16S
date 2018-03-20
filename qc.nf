@@ -18,21 +18,17 @@ process trimming_se {
 
     input:
         set val(id), file(reads) from reads_atropos_se
-        file adapters
 
     when:
         reads instanceof Path
 
     output:
-        file "trimmed_*" into trimmed_reads_se
-
-
+        set val(id), file("${id}.fastq") into trimmed_reads_se
 
     script:
         """
-        mkdir trimmed
         atropos -T 4 -m 50 -M 750 --max-n 0 -q 20,20 \
-            -se $reads -o trimmed_$reads
+            -se $reads -o ${id}.fastq
         """
 }
 
@@ -45,14 +41,14 @@ process trimming_pe {
         file adapters
 
     output:
-        file "trimmed_*" into trimmed_reads_pe
+        set val(id), file("${id}_R1.fastq"), file("${id}_R2.fastq") into trimmed_reads_pe
 
     script:
         """
         mkdir trimmed
         atropos -a TGGAATTCTCGGGTGCCAAGG -B AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT \
             -T 4 -m 50 --max-n 0 -q 20,20 -pe1 $read1 -pe2 $read2 \
-            -o trimmed_$read1 -p trimmed_$read2
+            -o ${id}_R1.fastq -p ${id}_R2.fastq
         """
 }
 
@@ -60,15 +56,14 @@ process fastqc {
     container 'hadrieng/fastqc'
 
     input:
-        file reads from trimmed_reads_se.concat(trimmed_reads_pe)
+        file reads from trimmed_reads_se.concat(trimmed_reads_pe).collect()
 
     output:
         file "*_fastqc.{zip,html}" into fastqc_results
 
     script:
         """
-        mkdir fastqc
-        fastqc $reads
+        fastqc -t 4 $reads
         """
 }
 
