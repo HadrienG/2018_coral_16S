@@ -31,7 +31,7 @@ process trimming_se {
     script:
         """
         mkdir trimmed
-        atropos -b file:$adapters -T 4 -m 50 --max-n 0 -q 10,10 \
+        atropos -T 4 -m 50 -M 750 --max-n 0 -q 20,20 \
             -se $reads -o trimmed_$reads
         """
 }
@@ -50,8 +50,8 @@ process trimming_pe {
     script:
         """
         mkdir trimmed
-        atropos -b file:$adapters -B file:$adapters -T 4 -m 50 --max-n 0 \
-            -q 10,10 -pe1 $read1 -pe2 $read2 \
+        atropos -a TGGAATTCTCGGGTGCCAAGG -B AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT \
+            -T 4 -m 50 --max-n 0 -q 20,20 -pe1 $read1 -pe2 $read2 \
             -o trimmed_$read1 -p trimmed_$read2
         """
 }
