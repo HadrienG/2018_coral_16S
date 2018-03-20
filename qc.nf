@@ -1,21 +1,68 @@
 #!/usr/bin/env nextflow
 
-params.input = "data"
+params.input = "data/"
 params.output = 'data/trimmed'
+params.adapters = 'data/adapters.fasta'
 
-// Channel
-//     .fromFilePairs( params.input + "*.fastq.gz", size: -1 )
-//     .ifEmpty { error "Cannot find any reads matching: ${params.reads}" }
-//     .set { read_files }
+adapters = file(params.adapters)
 
-read_files = Channel.fromPath(params.input + '*.fastq.gz')
+reads_atropos_se = Channel
+    .fromFilePairs(params.input + '*_{1,2,3}.fastq.gz', size: -1)
 
+reads_atropos_pe = Channel
+    .fromFilePairs(params.input + '*_{1,2,3}.fastq.gz', size: 2, flat: true)
+
+reads_multiqc = Channel
+    .fromPath(params.output + '*.fastq.gz')
+
+process trimming_se {
+    container 'jdidion/atropos'
+    publishDir params.output, mode: 'copy'
+
+    input:
+        set val(id), file(reads) from reads_atropos_se
+        file adapters
+
+    when:
+        reads instanceof Path
+
+    output:
+        file "trimmed_*" into trimmed_reads_se
+
+
+
+    script:
+        """
+        mkdir trimmed
+        atropos -b file:$adapters -T 4 -m 50 --max-n 0 -se $reads -o trimmed_$reads
+        """
+}
+
+process trimming_pe {
+    container 'jdidion/atropos'
+    publishDir params.output, mode: 'copy'
+
+    input:
+        set val(id), file(read1), file(read2) from reads_atropos_pe
+        file adapters
+
+    output:
+        file "trimmed_*" into trimmed_reads_pe
+
+    script:
+        """
+        mkdir trimmed
+        atropos -b file:$adapters -B file:$adapters -T 4 -m 50 --max-n 0 \
+            -pe1 $read1 -pe2 $read2 \
+            -o trimmed_$read1 -p trimmed_$read2
+        """
+}
 
 process fastqc {
     container 'hadrieng/fastqc'
 
     input:
-        file reads from read_files
+        file reads from reads_multiqc
 
     output:
         file "*_fastqc.{zip,html}" into fastqc_results
@@ -42,35 +89,3 @@ process multiqc {
         multiqc .
         """
 }
-
-
-// process trimming {
-//     tag {name}
-//     container 'jdidion/atropos'
-//     publishDir params.output, mode: 'copy'
-//
-//     input:
-//         set val(name), file(reads) from read_files
-//
-//     output:
-//         file 'trimmed/*.fastq.gz' into trimmed_reads
-//
-//     script:
-//         def single = reads instanceof Path
-//         if( !single ) {
-//             """
-//             mkdir trimmed
-//             cd trimmed
-//             echo $reads
-//             atropos detect -pe1 reads_1 -pe2 reads_2
-//             atropos -m 50
-//             """
-//         }
-//         else {
-//             """
-//             mkdir trimmed
-//             atropos detect -se $reads -o adapters.fasta
-//             atropos -B adapters.fasta -m 50 -se $reads -o trimmed/$reads
-//             """
-//         }
-// }
