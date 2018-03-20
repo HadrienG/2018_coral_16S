@@ -12,9 +12,6 @@ reads_atropos_se = Channel
 reads_atropos_pe = Channel
     .fromFilePairs(params.input + '*_{1,2,3}.fastq.gz', size: 2, flat: true)
 
-reads_multiqc = Channel
-    .fromPath(params.output + '*.fastq.gz')
-
 process trimming_se {
     container 'jdidion/atropos'
     publishDir params.output, mode: 'copy'
@@ -34,7 +31,8 @@ process trimming_se {
     script:
         """
         mkdir trimmed
-        atropos -b file:$adapters -T 4 -m 50 --max-n 0 -se $reads -o trimmed_$reads
+        atropos -b file:$adapters -T 4 -m 50 --max-n 0 -q 10,10 \
+            -se $reads -o trimmed_$reads
         """
 }
 
@@ -53,10 +51,13 @@ process trimming_pe {
         """
         mkdir trimmed
         atropos -b file:$adapters -B file:$adapters -T 4 -m 50 --max-n 0 \
-            -pe1 $read1 -pe2 $read2 \
+            -q 10,10 -pe1 $read1 -pe2 $read2 \
             -o trimmed_$read1 -p trimmed_$read2
         """
 }
+
+reads_multiqc = Channel
+    .fromPath(params.output + '*.fastq.gz')
 
 process fastqc {
     container 'hadrieng/fastqc'
