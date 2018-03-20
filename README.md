@@ -79,7 +79,10 @@ This will create a `db` directory
 
 ### Data QC and Adapter trimming
 
-wip
+```
+nextflow run qc.nf
+gzip data/trimmed/*.fastq
+```
 
 ### Run DADA2
 
