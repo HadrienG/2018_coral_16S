@@ -57,7 +57,8 @@ process trimming_pe {
 }
 
 reads_multiqc = Channel
-    .fromPath(params.output + '*.fastq.gz')
+    .create()
+    .concat(trimmed_reads_se, trimmed_reads_pe)
 
 process fastqc {
     container 'hadrieng/fastqc'
