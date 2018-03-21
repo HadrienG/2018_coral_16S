@@ -8,6 +8,7 @@ work/
 *.fastq.gz
 db/
 *.html
+*.RData
 
 # r stuff
 .Rproj.user
