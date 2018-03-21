@@ -8,6 +8,7 @@ services:
 
 install:
     - sudo bash test/install.sh
+    - sudo make db
     - cd ${TRAVIS_BUILD_DIR}/test/
 
 script:
