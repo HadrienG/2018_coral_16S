@@ -13,6 +13,7 @@ install:
 script:
     - sudo bash test_download.sh
     - sudo bash test_qc.sh
+    - sudo bash test_dada.sh
 
 after_failure:
     - cat .nextflow.log
