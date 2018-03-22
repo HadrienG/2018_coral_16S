@@ -49,7 +49,7 @@ process get_accessions {
 process dada2 {
     container 'hadrieng/dada2'
     publishDir params.output, mode: 'copy'
-    echo true
+    cpus 2
 
     input:
         set val(bioproject), file(metadata) from metadatas
