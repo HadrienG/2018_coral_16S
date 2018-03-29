@@ -44,7 +44,7 @@ See `data/samples.txt` for more information
 
 ## Setup
 
-To run the code, you'll need [nextflow](https://www.nextflow.io/) installed.
+To run the code, you'll need [nextflow](https://www.nextflow.io/) and [docker](https://www.docker.com/community-edition) installed.
 
 ### Download the data
 
@@ -79,19 +79,22 @@ This will create a `db` directory
 
 ### Data QC and Adapter trimming
 
-```
+```bash
 nextflow run qc.nf
 gzip data/trimmed/*.fastq
 ```
 
+You'll need the same storage space as for downloading the data.
+Once again you can cleanup the temporary with `make clean`
+
 ### Run DADA2
 
-wip
-
-see `dada2.Rmd`
+```bash
+nextflow run dada.nf
+```
 
 ### Data visualisation
 
-wip
+*wip*
 
 see `phyloseq.Rmd`

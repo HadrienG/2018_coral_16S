@@ -49,7 +49,6 @@ process get_accessions {
 process dada2 {
     container 'hadrieng/dada2'
     publishDir params.output, mode: 'copy'
-    cpus 2
 
     input:
         set val(bioproject), file(metadata) from metadatas
