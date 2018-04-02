@@ -105,18 +105,37 @@ process dada2 {
                 inner_join(reverse, by = 'run') %>%
                 inner_join(metadata, by = 'run')
 
-            errors_f <- learnErrors(samples\$r1, multithread = TRUE)
-            errors_r <- learnErrors(samples\$r2, multithread = TRUE)
+            if ( nrow(samples) != nrow(metadata) ) {
+                # deal with unpaired miseq data
+                reads <- as_tibble(sort(list.files(path,
+                                   pattern = ".fastq.gz",
+                                   full.names = TRUE)))
+                colnames(reads) <- c('path')
 
-            dereps_f <- derepFastq(samples\$r1)
-            dereps_r <- derepFastq(samples\$r2)
-            names(dereps_f) <- samples\$run
-            names(dereps_r) <- samples\$run
+                reads\$run <- sapply(strsplit(basename(reads\$path),
+                                              ".",
+                                              fixed = TRUE), `[`, 1)
+                samples <- reads %>% inner_join(metadata, by = 'run')
 
-            dada_f <- dada(dereps_f, err = errors_f, multithread = TRUE)
-            dada_r <- dada(dereps_r, err = errors_r, multithread = TRUE)
+                errors <- learnErrors(samples\$path, multithread = TRUE)
+                dereps <- derepFastq(samples\$path)
+                names(dereps) <- samples\$run
 
-            dada <- mergePairs(dada_f, dereps_f, dada_r, dereps_r)
+                dada <- dada(dereps, err = errors, multithread = TRUE)
+            } else {
+                errors_f <- learnErrors(samples\$r1, multithread = TRUE)
+                errors_r <- learnErrors(samples\$r2, multithread = TRUE)
+
+                dereps_f <- derepFastq(samples\$r1)
+                dereps_r <- derepFastq(samples\$r2)
+                names(dereps_f) <- samples\$run
+                names(dereps_r) <- samples\$run
+
+                dada_f <- dada(dereps_f, err = errors_f, multithread = TRUE)
+                dada_r <- dada(dereps_r, err = errors_r, multithread = TRUE)
+
+                dada <- mergePairs(dada_f, dereps_f, dada_r, dereps_r)
+            }
         }
 
         seqtab <- makeSequenceTable(dada)
@@ -131,5 +150,5 @@ process dada2 {
 
        save(seqtab_$bioproject, file = "seqtab_${bioproject}.RData")
        save(taxa_$bioproject, file = "taxa_${bioproject}.RData")
-        """
+       """
 }
