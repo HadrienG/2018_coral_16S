@@ -15,29 +15,57 @@ The data have been reanalysed with [dada2](https://benjjneb.github.io/dada2/inde
 
 The code to run the whole pipeline can be found [here](https://github.com/HadrienG/2018_coral_16S)
 
-## Load the data and the necessary packages
+## Load and tidy the data
 
 ```{r load_packages}
 library(tidyverse)
 ```
 
-```{r load_data}
-r_data_path <- 'results'
-r_data_files <- list.files(path = r_data_path, pattern = ".RData",
-                           full.names = TRUE)
-for (r_data_file in r_data_files) {
-    load(r_data_file)
-}
 
-metadata <- read_csv("data/samples.txt")
+```{r tidy_function}
+#' merge together the metadata, OTU table and taxa table from dada2 into
+#' a tidier tibble ready for plotting with ggplot2
+tidy_data <- function(seq, tax, metadata) {
+    transposed_seq <- as.data.frame(t(seq)) %>%
+        as_tibble() %>%
+        rownames_to_column(var = 'OTU')
+    taxonomy <- as.data.frame(tax) %>%
+        as_tibble() %>%
+        rownames_to_column(var = 'OTU')
+    taxa_table <- inner_join(taxonomy, transposed_seq, by='OTU') %>%
+        gather('run', 'count', starts_with('SRR')) %>%
+        gather('rank', 'taxonomy', 2:8) %>%
+        group_by(taxonomy, run) %>%
+        mutate(total = sum(count)) %>%
+        ungroup() %>%
+        select(-OTU, -count) %>%
+        distinct() %>%
+        inner_join(metadata, by = 'run') 
+    return(taxa_table)
+}
+```
+
+```{r load_and_tidy}
+metadata <- read_csv("data/samples.txt") 
 row.names(metadata) <- metadata$run
+
+
+bioprojects <- metadata %>%
+    select(project) %>%
+    distinct()
+bioprojects
+for (bioproject in bioprojects) {
+    seqtab <- readRDS(paste0('seqtab_', bioproject, '.Rds'))
+    taxa <- readRDS(paste0('taxa_', bioproject, '.Rds'))
+    bioproject <- tidy_data(seqtab, taxa, metadata)
+}
 ```
 
 ## Tidy the data
 
 TODO:
 
-- [ ] add sample info to taxonomy tables
+- [x] add sample info to taxonomy tables
 - [ ] merge taxonomy tables
 
 ideally the tidy table should look like
@@ -46,41 +74,12 @@ ideally the tidy table should look like
 
 ==> count in seqtab needs to be two rows in taxa
 
-```{r tidy_data}
-# test proj. will apply to all once working
-test_seq <- seqtab_PRJNA189184
-test_tax <- taxa_PRJNA189184
+```{r apply_tidy}
+map2(data_df$x, data_df$y, tidy_data, metadata = metadata)
 
-transposed <- as.data.frame(t(test_seq)) %>%
-    as_tibble() %>%
-    rownames_to_column(var = 'OTU')
-tax <- as.data.frame(test_tax) %>%
-    as_tibble() %>%
-    rownames_to_column(var = 'OTU')
-# View(test_tax)
-
-joined <- tax %>% 
-    inner_join(transposed, by='OTU')
-
-View(joined)
-```
-
-```{r tidy_data_2}
-gathered <- joined %>%
-    gather('run', 'count', starts_with('SRR')) %>%
-    gather('rank', 'taxonomy', 2:8) %>%
-    group_by(taxonomy, run) %>%
-    mutate(total = sum(count)) %>%
-    ungroup() %>%
-    select(-OTU, -count) %>%
-    distinct()
-
-View(gathered)
-```
-
-```{r tidy_data_3}
-final <- gathered %>% inner_join(metadata, by = 'run') 
-View(final)
+for (row in vector) {
+    
+}
 ```
 
 
