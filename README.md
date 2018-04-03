@@ -97,4 +97,4 @@ nextflow run dada.nf
 
 *wip*
 
-see `phyloseq.Rmd`
+see `analysis.Rmd`
