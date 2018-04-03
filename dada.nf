@@ -149,7 +149,7 @@ process dada2 {
         taxa_$bioproject <- addSpecies(taxa_$bioproject,
                                        "$database_dir/silva_species_assignment_v132.fa.gz")
 
-       save(seqtab_$bioproject, file = "seqtab_${bioproject}.RData")
-       save(taxa_$bioproject, file = "taxa_${bioproject}.RData")
+       saveRDS(seqtab_$bioproject, file = "seqtab_${bioproject}.Rds")
+       saveRDS(taxa_$bioproject, file = "taxa_${bioproject}.Rds")
        """
 }
