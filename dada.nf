@@ -144,7 +144,8 @@ process dada2 {
 
         taxa_$bioproject <- assignTaxonomy(seqtab_$bioproject,
                                            "$database_dir/silva_nr_v132_train_set.fa.gz",
-                                           multithread = TRUE)
+                                           multithread = TRUE,
+                                           tryRC=TRUE)
         taxa_$bioproject <- addSpecies(taxa_$bioproject,
                                        "$database_dir/silva_species_assignment_v132.fa.gz")
 
