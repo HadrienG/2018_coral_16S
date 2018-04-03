@@ -16,7 +16,7 @@ PRJNA313050, SRR3185242, coral, Antillogorgia elisabethae, 26.5N 78.5W, 2006, 45
 PRJNA313050, SRR3185243, coral, Antillogorgia elisabethae, 26.5N 78.5W, 2006, 454, V1-V2
 PRJNA313050, SRR3185251, coral, Antillogorgia elisabethae, 24.0N 74.5W, 2013, 454, V4
 PRJNA313050, SRR3185264, coral, Antillogorgia elisabethae, 26.5N 78.5W, 2006, 454, V1-V2
-PRJNA313050, SRR3185266, coral, Antillogorgia elisabethae, 24.0N 74.5W, 2011, 454. V4
+PRJNA313050, SRR3185266, coral, Antillogorgia elisabethae, 24.0N 74.5W, 2011, 454, V4
 PRJNA313050, SRR3185267, coral, Antillogorgia elisabethae, 24.0N 74.5W, 2013, 454, V4
 PRJNA313050, SRR3185270, coral, Antillogorgia elisabethae, 24.0N 74.5W, 2011, 454, V4
 PRJNA313050, SRR3185273, coral, Antillogorgia elisabethae, 24.0N 74.5W, 2011, 454, V4
