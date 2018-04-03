@@ -56,7 +56,7 @@ process dada2 {
         file database_dir
 
     output:
-        file("*_${bioproject}.RData") into dadas
+        file("*_${bioproject}.Rds") into dadas
 
     script:
         """
