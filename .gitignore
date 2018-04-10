@@ -9,6 +9,7 @@ work/
 db/
 *.html
 *.RData
+*.Rds
 
 # r stuff
 .Rproj.user

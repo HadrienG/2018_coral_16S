@@ -49,39 +49,17 @@ tidy_data <- function(seq, tax, metadata) {
 metadata <- read_csv("data/samples.txt") 
 row.names(metadata) <- metadata$run
 
+full_seqtab <- dir('results', pattern = 'seqtab_', full.names = TRUE) %>%
+    set_names() %>%
+    map(readRDS)
+full_taxa <- dir('results', pattern = 'taxa_', full.names = TRUE) %>%
+    set_names() %>%
+    map(readRDS)
 
-bioprojects <- metadata %>%
-    select(project) %>%
-    distinct()
-bioprojects
-for (bioproject in bioprojects) {
-    seqtab <- readRDS(paste0('seqtab_', bioproject, '.Rds'))
-    taxa <- readRDS(paste0('taxa_', bioproject, '.Rds'))
-    bioproject <- tidy_data(seqtab, taxa, metadata)
-}
+full_data <- map2(full_seqtab, full_taxa, tidy_data, metadata = metadata)
+
+coral_dataset <- bind_rows(full_data)
 ```
-
-## Tidy the data
-
-TODO:
-
-- [x] add sample info to taxonomy tables
-- [ ] merge taxonomy tables
-
-ideally the tidy table should look like
-
-| sample | rank | taxonomy | count |
-
-==> count in seqtab needs to be two rows in taxa
-
-```{r apply_tidy}
-map2(data_df$x, data_df$y, tidy_data, metadata = metadata)
-
-for (row in vector) {
-    
-}
-```
-
 
 ## Descriptive statistics
 
