@@ -19,6 +19,8 @@ The code to run the whole pipeline can be found [here](https://github.com/Hadrie
 
 ```{r load_packages}
 library(tidyverse)
+library(ggsci)
+library(RColorBrewer)
 ```
 
 
@@ -63,4 +65,34 @@ coral_dataset <- bind_rows(full_data)
 
 ## Descriptive statistics
 
-## Is there common ground?
+#### Coral microbiome
+
+- [ ] How many NAs? To what is it due?
+- [ ] How does the distribution of (i) phyla (ii) families and (iii) genera compare across samples?
+- [ ] Is there a common ground? i.e. is there a shared baseline across samples/datasets?
+- [ ] Is there a pattern to see with the location and species info?
+- [ ] How do the bleached samples look compared to the others?
+
+#### Reproducibility
+
+- [ ] How much does the sequencing depth differ across projects?
+- [ ] How does the numbers of OTUs found in each study compare with the number of OTUs found in the original papers?
+
+```{r}
+coral_dataset %>% filter(rank == "Phylum",
+                         taxonomy %in% c('Proteobacteria',
+                                         'Spirochaetes',
+                                         'Bacteroidetes',
+                                         'Cyanobacteria',
+                                         'Actinobacteria')) %>% {
+    ggplot(.) +
+    geom_boxplot(aes(taxonomy, total, color=project)) +
+    theme_minimal() +
+    scale_color_brewer(palette = 'Paired') +
+    theme(axis.text.x = element_text(angle = 30, hjust = 1)) +
+    ggtitle('Distribution of most abundant phyla') +
+    xlab('Phylum') +
+    ylab('Count')
+}
+```
+
