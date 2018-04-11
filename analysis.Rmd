@@ -65,15 +65,61 @@ coral_dataset <- bind_rows(full_data)
 
 ## Descriptive statistics
 
-#### Coral microbiome
+### Coral microbiome
 
-- [ ] How many NAs? To what is it due?
+- [x] How many NAs?
+- [ ] To what is it due? Is there as many in the published papers?
+
+```{r nas, warning = FALSE}
+coral_dataset %>% filter(rank == 'Kingdom') %>% {
+    ggplot(.) +
+        geom_point(aes(project, total, color = taxonomy),
+                   position = 'jitter', alpha = 0.8) +
+        theme_minimal() +
+        scale_color_brewer(palette = 'Set1', na.value = 'grey', name = 'Kingdom') +
+        theme(axis.text.x = element_text(angle = 30, hjust = 1)) +
+        ggtitle('Distribution of Kingdoms across datasets') +
+        xlab('Dataset') +
+        ylab('Counts (log scale)') +
+        scale_y_log10()
+}
+ggsave(filename='figures/nas.png', device = 'png', dpi = 600)
+```
+
+
 - [ ] How does the distribution of (i) phyla (ii) families and (iii) genera compare across samples?
+
+```{r}
+temp_dataset <- coral_dataset %>% filter(rank == 'Phylum')
+length(temp_dataset$taxonomy %>% unique())
+top_5 <- c('Spirochaetes', 'Proteobacteria', 'Bacteroidetes', 'Actinobacteria',
+           'Tenericutes')
+top_10 <- c(top_5, 'Firmicutes', 'Cyanobacteria',
+            'Marinimicrobia_(SAR406_clade)', 'Cnidaria', 'Dinoflagellata')
+```
+
+```{r phyla}
+# larghe color palette
+color <-  grDevices::colors()[grep('gr(a|e)y', grDevices::colors(), invert = T)]
+col <-  sample(color, 54)
+
+coral_dataset %>% filter(rank == 'Phylum', is.na(taxonomy) == FALSE,
+                         taxonomy %in% top_5) %>% {
+    ggplot(.) +
+        geom_jitter(aes(project, total, color=taxonomy), alpha = 0.5) +
+        theme_minimal() +
+        scale_fill_discrete() +
+        theme(axis.text.x = element_text(angle = 30, hjust = 1)) +
+        scale_y_log10()
+}
+```
+
+
 - [ ] Is there a common ground? i.e. is there a shared baseline across samples/datasets?
 - [ ] Is there a pattern to see with the location and species info?
 - [ ] How do the bleached samples look compared to the others?
 
-#### Reproducibility
+### Reproducibility
 
 - [ ] How much does the sequencing depth differ across projects?
 - [ ] How does the numbers of OTUs found in each study compare with the number of OTUs found in the original papers?
@@ -86,13 +132,13 @@ coral_dataset %>% filter(rank == "Phylum",
                                          'Cyanobacteria',
                                          'Actinobacteria')) %>% {
     ggplot(.) +
-    geom_boxplot(aes(taxonomy, total, color=project)) +
-    theme_minimal() +
-    scale_color_brewer(palette = 'Paired') +
-    theme(axis.text.x = element_text(angle = 30, hjust = 1)) +
-    ggtitle('Distribution of most abundant phyla') +
-    xlab('Phylum') +
-    ylab('Count')
+        geom_boxplot(aes(taxonomy, total, color=project)) +
+        theme_minimal() +
+        scale_color_brewer(palette = 'Paired') +
+        theme(axis.text.x = element_text(angle = 30, hjust = 1)) +
+        ggtitle('Distribution of most abundant phyla') +
+        xlab('Phylum') +
+        ylab('Count')
 }
 ```
 
