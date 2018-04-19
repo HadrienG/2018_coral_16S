@@ -21,7 +21,23 @@ The code to run the whole pipeline can be found [here](https://github.com/Hadrie
 library(tidyverse)
 library(ggsci)
 library(RColorBrewer)
+library(gridExtra)
+library(patchwork)
 ```
+
+```{r color_palettes}
+colors_13 <-  c("#ffa755", "#3e0a7c", "#591300", "#006cbe", "#80002e",
+                "#02e0be", "#944400", "#ff70a5", "#00601b", "#d53694",
+                "#46c35b", "#b00061", "#ffca7f")
+# color <-  grDevices::colors()[grep('gr(a|e)y', grDevices::colors(), invert = T)]
+colors_26 <-  c("#ffa755", "#3e0a7c", "#591300", "#006cbe", "#80002e",
+                "#02e0be", "#944400", "#ff70a5", "#00601b", "#d53694",
+                "#46c35b", "#b00061", "#ffca7f", "#00327f", "#daa61e",
+                "#cb729a", "#62ed9b", "#9a0081", "#677300", "#b553c4",
+                "#006b3b", "#8770e9", "#c51e38", "#00bcfb", "#cc4128",
+                "#fa94ff")
+```
+
 
 
 ```{r tidy_function}
@@ -90,28 +106,57 @@ ggsave(filename='figures/nas.png', device = 'png', dpi = 600)
 - [ ] How does the distribution of (i) phyla (ii) families and (iii) genera compare across samples?
 
 ```{r}
-temp_dataset <- coral_dataset %>% filter(rank == 'Phylum')
-length(temp_dataset$taxonomy %>% unique())
-top_5 <- c('Spirochaetes', 'Proteobacteria', 'Bacteroidetes', 'Actinobacteria',
-           'Tenericutes')
-top_10 <- c(top_5, 'Firmicutes', 'Cyanobacteria',
-            'Marinimicrobia_(SAR406_clade)', 'Cnidaria', 'Dinoflagellata')
-```
+top_phyla <- coral_dataset %>%
+    filter(rank == 'Phylum') %>%
+    drop_na() %>%
+    group_by(run) %>%
+    top_n(5, total) %>%
+    filter(total > 20, taxonomy != 'Dinoflagellata', taxonomy != 'Cnidaria',
+           taxonomy != 'Arthropoda') %>%
+    arrange(total) %>%
+    ungroup()
 
-```{r phyla}
-# larghe color palette
-color <-  grDevices::colors()[grep('gr(a|e)y', grDevices::colors(), invert = T)]
-col <-  sample(color, 54)
+background <- coral_dataset %>%
+    filter(rank == 'Phylum') %>%
+    drop_na() %>%
+    anti_join(top_phyla) %>%
+    group_by(run) %>%
+    mutate(count = sum(total)) %>%
+    select(-total, -taxonomy) %>%
+    rename(total = count) %>%
+    ungroup() %>%
+    add_column(taxonomy = 'Other') %>%
+    distinct() %>%
+    filter(total > 0)
 
-coral_dataset %>% filter(rank == 'Phylum', is.na(taxonomy) == FALSE,
-                         taxonomy %in% top_5) %>% {
-    ggplot(.) +
-        geom_jitter(aes(project, total, color=taxonomy), alpha = 0.5) +
-        theme_minimal() +
-        scale_fill_discrete() +
-        theme(axis.text.x = element_text(angle = 30, hjust = 1)) +
-        scale_y_log10()
-}
+top_phyla <- top_phyla %>%
+    bind_rows(background)
+
+ggplot(top_phyla) +
+    geom_boxplot(aes(reorder(taxonomy, total, max), total), alpha = 0.8,
+                 color = 'grey30') +
+    geom_jitter(aes(reorder(taxonomy, total, max), total, color = project),
+                alpha = 0.25, width = 0.2) +
+    scale_color_manual(values = colors_13) +
+    theme_minimal() +
+    coord_flip() +
+    ylab('Counts (log scale)') +
+    xlab('Most abundant phyla') +
+    ggtitle('Distribution of phyla') +
+    guides(colour = guide_legend(override.aes = list(alpha = 1))) +
+    scale_y_log10()
+ggsave(filename='figures/phyla_box.png', device = 'png', dpi = 600)
+
+ggplot(top_phyla) +
+    geom_bar(aes(reorder(project, total, max), total, fill = taxonomy),
+             stat = 'identity', position = 'fill', alpha = 0.5) +
+    scale_fill_manual(values = colors_26) +
+    theme_minimal() +
+    theme(axis.text.x = element_text(angle = 30, hjust = 1)) +
+    ggtitle('Proportion of phyla per datasets') +
+    xlab('Dataset') +
+    ylab('Percentage')
+ggsave(filename='figures/phyla_bar.png', device = 'png', dpi = 600)
 ```
 
 
@@ -123,22 +168,3 @@ coral_dataset %>% filter(rank == 'Phylum', is.na(taxonomy) == FALSE,
 
 - [ ] How much does the sequencing depth differ across projects?
 - [ ] How does the numbers of OTUs found in each study compare with the number of OTUs found in the original papers?
-
-```{r}
-coral_dataset %>% filter(rank == "Phylum",
-                         taxonomy %in% c('Proteobacteria',
-                                         'Spirochaetes',
-                                         'Bacteroidetes',
-                                         'Cyanobacteria',
-                                         'Actinobacteria')) %>% {
-    ggplot(.) +
-        geom_boxplot(aes(taxonomy, total, color=project)) +
-        theme_minimal() +
-        scale_color_brewer(palette = 'Paired') +
-        theme(axis.text.x = element_text(angle = 30, hjust = 1)) +
-        ggtitle('Distribution of most abundant phyla') +
-        xlab('Phylum') +
-        ylab('Count')
-}
-```
-
