@@ -22,12 +22,13 @@ library(tidyverse)
 library(ggsci)
 library(RColorBrewer)
 library(gridExtra)
+library(reticulate)
 ```
 
 ```{r color_palettes}
-colors_13 <-  c("#ffa755", "#3e0a7c", "#591300", "#006cbe", "#80002e",
-                "#02e0be", "#944400", "#ff70a5", "#00601b", "#d53694",
-                "#46c35b", "#b00061", "#ffca7f")
+# colors_13 <-  c("#ffa755", "#3e0a7c", "#591300", "#006cbe", "#80002e",
+#                 "#02e0be", "#944400", "#ff70a5", "#00601b", "#d53694",
+#                 "#46c35b", "#b00061", "#ffca7f")
 colors_13 <- c('#a6cee3', '#1f78b4', '#b2df8a', '#33a02c', '#fb9a99',
                '#e31a1c', '#fdbf6f', '#ff7f00', '#cab2d6', '#6a3d9a',
                '#ffff99','#b15928', '#808080')
@@ -120,7 +121,8 @@ One study (PRJNA193567) seems to contain very little bacteria
 
 ```{r phyla}
 top_phyla <- coral_dataset %>%
-    filter(rank == 'Phylum') %>%
+    filter(rank == 'Phylum',
+           sample != "seawater") %>%
     drop_na() %>%
     group_by(run) %>%
     top_n(5, total) %>%
@@ -130,15 +132,16 @@ top_phyla <- coral_dataset %>%
     ungroup()
 
 background <- coral_dataset %>%
-    filter(rank == 'Phylum') %>%
+    filter(rank == 'Phylum',
+           sample != "seawater") %>%
     drop_na() %>%
     anti_join(top_phyla) %>%
     group_by(run) %>%
     mutate(count = sum(total)) %>%
     select(-total, -taxonomy) %>%
-    rename(total = count) %>%
+    dplyr::rename(total = count) %>%
     ungroup() %>%
-    add_column(taxonomy = 'Other') %>%
+    add_column(taxonomy = "Other") %>%
     distinct() %>%
     filter(total > 0)
 
@@ -162,7 +165,7 @@ ggsave(filename = 'figures/phyla_box.png', device = 'png', dpi = 600)
 
 ggplot(top_phyla) +
     geom_bar(aes(reorder(project, total, max), total, fill = taxonomy),
-             stat = 'identity', position = 'fill', alpha = 0.8) +
+             stat = 'identity', position = 'fill', alpha = 0.7) +
     scale_fill_manual(values = colors_25) +
     theme_minimal() +
     theme(axis.text.x = element_text(angle = 30, hjust = 1)) +
@@ -172,10 +175,45 @@ ggplot(top_phyla) +
 ggsave(filename = 'figures/phyla_bar.png', device = 'png', dpi = 600)
 ```
 
+The most abundant phylum in all but two datasets is proteobacteria.
+Let us zoom in on the proteobacteria
+
+```{r}
+# load your correct python virtualenv here
+# modules needed: taxadb
+use_virtualenv("~/.virtualenvs/workspace-w0RVuX47")
+```
+
+
+```{python}
+from taxadb.taxid import TaxID
+print("this is so cool!")
+```
+
 
 - [ ] Is there a common ground? i.e. is there a shared baseline across samples/datasets?
 - [ ] Is there a pattern to see with the location and species info?
 - [ ] How do the bleached samples look compared to the others?
+
+```{r bleaching}
+ggplot(top_phyla) +
+    geom_boxplot(aes(reorder(taxonomy, total, max), total), alpha = 0.2,
+                 color = 'grey30') +
+    geom_jitter(aes(reorder(taxonomy, total, max), total, color = project),
+            alpha = 0.2, width = 0.2, size = 0.7) +
+    scale_color_manual(values = colors_13) +
+    theme_minimal() +
+    coord_flip() +
+    ylab('Counts (log scale)') +
+    xlab('Most abundant phyla') +
+    ggtitle('Distribution of phyla') +
+    scale_y_log10() +
+    theme(axis.text.y = element_text(angle = 30, hjust = 1, size = 4.5)) +
+    guides(colour = guide_legend(override.aes = list(alpha = 1, size = 2))) +
+    facet_wrap(~ sample)
+ggsave(filename = 'figures/bleached_boxplot.png', device = 'png', dpi = 600)
+```
+
 
 ### Reproducibility
 
