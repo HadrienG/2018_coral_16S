@@ -22,7 +22,7 @@ library(tidyverse)
 library(ggsci)
 library(RColorBrewer)
 library(gridExtra)
-library(reticulate)
+library(taxonomizr)
 ```
 
 ```{r color_palettes}
@@ -71,7 +71,7 @@ tidy_data <- function(seq, tax, metadata) {
 }
 ```
 
-```{r load_and_tidy}
+```{r load_and_tidy, warning=FALSE}
 metadata <- read_csv("data/samples.txt") 
 row.names(metadata) <- metadata$run
 
@@ -178,16 +178,81 @@ ggsave(filename = 'figures/phyla_bar.png', device = 'png', dpi = 600)
 The most abundant phylum in all but two datasets is proteobacteria.
 Let us zoom in on the proteobacteria
 
-```{r}
-# load your correct python virtualenv here
-# modules needed: taxadb
-use_virtualenv("~/.virtualenvs/workspace-w0RVuX47")
+First we have to download and create the taxonomy database
+
+```{r tax_db}
+getNamesAndNodes(outDir = "db",
+                 url = "ftp://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz",
+                 fileNames = c("names.dmp", "nodes.dmp"))
+read.nodes.sql("db/nodes.dmp",
+               sqlFile = "db/taxonomy.sqlite")
+read.names.sql("db/names.dmp",
+               sqlFile = "db/taxonomy.sqlite")
 ```
 
 
-```{python}
-from taxadb.taxid import TaxID
-print("this is so cool!")
+```{r tax_fun}
+is_taxonomy <- function(query_tax, target_tax, database) {
+    # check if query tax has target tax as a parent
+    query_id <- getId(query_tax, database)
+    query_lineage <- getTaxonomy(query_id, database)
+    if (target_tax %in% query_lineage) {
+        paste(query_lineage)
+        return(TRUE)
+    }
+    else {
+        return(FALSE)
+    }
+}
+is_taxonomy_vec <- Vectorize(is_taxonomy, vectorize.args = "query_tax")
+```
+
+
+```{r proteo_filter, warning=FALSE}
+proteo_file = "results/proteobacteria.Rds"
+if (!file.exists(proteo_file)) {
+    # this will take a while (~3-4 hours on my MacBook Pro)
+    proteo_logical <- is_taxonomy_vec(
+        coral_dataset$taxonomy, "Proteobacteria", "db/taxonomy.sqlite")
+    proteobacteria <- coral_dataset[proteo_logical, ]
+    # save the data_table so we do not have to recompute
+    saveRDS(proteobacteria, proteo_file)
+} else {
+    proteobacteria <- readRDS(proteo_file)
+}
+```
+
+```{r}
+View(head(proteobacteria))
+```
+
+
+```{r proteo_plots}
+top_order <- proteobacteria %>%
+    filter(rank == 'Genus',
+           sample != "seawater") %>%
+    drop_na() %>%
+    group_by(taxonomy) %>% 
+    tally(total) %>% 
+    top_n(19)
+
+my_data <- proteobacteria %>%
+    filter(taxonomy %in% top_order$taxonomy) %>% 
+    filter(sample == "coral")
+
+ggplot(my_data) +
+    geom_jitter(aes(reorder(project, total, max), reorder(taxonomy, total, max), color = taxonomy, size = total), alpha = 0.7) +
+    scale_color_manual(values = colors_25) +
+    theme_minimal() +
+    theme(axis.text.x = element_text(angle = 30, hjust = 1)) +
+    theme(legend.position = "none") +
+    ggtitle("Top 20 genera (Proteobacteria)") +
+    ylab("Genera") +
+    xlab("Bioproject")
+```
+
+```{r}
+
 ```
 
 
